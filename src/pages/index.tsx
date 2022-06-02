@@ -1,6 +1,6 @@
+import styled from '@emotion/styled';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import styled from '@emotion/styled';
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +22,8 @@ export default Home;
 
 const Styled = {
   Main: styled.main`
-    color: ${({ theme }) => theme.colors.white};
+    display: flex;
+    position: absolute;
+    color: ${({ theme }) => theme.colors.mainColor};
   `,
 };

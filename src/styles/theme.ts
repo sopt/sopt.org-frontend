@@ -6,4 +6,5 @@ const theme: Theme = {
     mainBannerColor: mainColor.mainBannerColor,
   },
 };
+
 export default theme;
