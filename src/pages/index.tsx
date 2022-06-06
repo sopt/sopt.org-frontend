@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Styled.Main>
-        <div>메인페이지입니다</div>
+        <h1>메인페이지입니다</h1>
       </Styled.Main>
     </div>
   );
@@ -24,6 +24,8 @@ const Styled = {
   Main: styled.main`
     display: flex;
     position: absolute;
+    width: 100px;
+    height: 100px;
     color: ${({ theme }) => theme.colors.mainColor};
   `,
 };
