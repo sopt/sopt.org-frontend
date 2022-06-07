@@ -4,3 +4,4 @@
 yarn lint
 yarn prettier
 yarn lint:css
+yarn test:ci
