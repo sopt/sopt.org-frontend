@@ -1,3 +1,4 @@
+import Introduce from '@src/components/Home/Introduce';
 import Top from '@src/components/Home/Top';
 import type { NextPage } from 'next';
 import Head from 'next/head';
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Top />
+      <Introduce />
     </div>
   );
 };
