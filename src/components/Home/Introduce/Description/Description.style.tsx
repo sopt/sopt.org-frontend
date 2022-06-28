@@ -1,9 +1,21 @@
 import styled from '@emotion/styled';
 
-export const Wrap = styled.div``;
+export const Wrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
-export const Title = styled.h1``;
+export const Description = styled.p`
+  margin-top: 50px;
+  margin-bottom: 70px;
+  /* or 53px */
 
-export const Description = styled.p``;
+  text-align: center;
+  line-height: 220%;
 
-export const Button = styled.button``;
+  font-family: 'SUIT';
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+`;
