@@ -10,4 +10,8 @@ export const global = css`
   body {
     background-color: #181818;
   }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `;

@@ -18,6 +18,8 @@ export const Wrap = styled.div`
 
   width: 100vw;
   height: 100vh;
+
+  scroll-snap-align: center;
 `;
 
 export const TextWrap = styled.div`

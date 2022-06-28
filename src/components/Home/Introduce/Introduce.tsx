@@ -2,13 +2,14 @@ import React from 'react';
 
 import Description from './Description';
 import IconBanner from './IconBanner';
+import * as S from './Introduce.style';
 
 function Introduce() {
   return (
-    <div>
+    <S.Wrap>
       <IconBanner />
       <Description />
-    </div>
+    </S.Wrap>
   );
 }
 

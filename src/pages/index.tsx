@@ -1,3 +1,4 @@
+import styled from '@emotion/styled';
 import Events from '@src/components/Home/Events';
 import Introduce from '@src/components/Home/Introduce';
 import Top from '@src/components/Home/Top';
@@ -12,11 +13,21 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Top />
-      <Introduce />
-      <Events />
+      <Styled.Main>
+        <Top />
+        <Introduce />
+        <Events />
+      </Styled.Main>
     </div>
   );
 };
 
 export default Home;
+
+const Styled = {
+  Main: styled.main`
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+  `,
+};
