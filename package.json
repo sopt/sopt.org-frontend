@@ -70,7 +70,6 @@
       "eslint --fix",
       "prettier --write",
       "stylelint --ignore-path .gitignore '**/*.(css|tsx)' --fix",
-      "jest --ci",
       "git add"
     ]
   },
