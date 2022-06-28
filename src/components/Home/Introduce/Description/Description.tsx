@@ -1,3 +1,4 @@
+import RoundButton from '@src/components/common/RoundButton';
 import React from 'react';
 
 import * as S from './Description.style';
@@ -15,7 +16,7 @@ function Description() {
         스터디, 네트워킹 행사 등 다양한 활동을 합니다. 다양한 분야의 사람들이 모여 화합을 통해
         변화하고 성장하는 가치를 추구합니다.
       </S.Description>
-      <S.Button>SOPT 활동 자세히 보기</S.Button>
+      <RoundButton>SOPT 활동 자세히 보기</RoundButton>
     </S.Wrap>
   );
 }
