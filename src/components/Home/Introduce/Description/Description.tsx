@@ -1,4 +1,5 @@
 import RoundButton from '@src/components/common/RoundButton';
+import UnderlinedTitle from '@src/components/common/UnderlinedTitle';
 import React from 'react';
 
 import * as S from './Description.style';
@@ -6,7 +7,7 @@ import * as S from './Description.style';
 function Description() {
   return (
     <S.Wrap>
-      <S.Title>SOPT를 소개합니다!</S.Title>
+      <UnderlinedTitle>SOPT를 소개합니다!</UnderlinedTitle>
       <S.Description>
         SOPT는 다양한 분야의 사람들이 모여 하나의 서비스를 만들기 위해 화합하는 동아리입니다.
         <br />
