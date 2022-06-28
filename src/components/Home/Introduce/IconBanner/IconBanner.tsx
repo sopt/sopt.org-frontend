@@ -1,9 +1,9 @@
 import React from 'react';
 
-// import * as S from './IconBanner.style';
+import * as S from './IconBanner.style';
 
 function IconBanner() {
-  return <div>IconBanner</div>;
+  return <S.Wrap>IconBanner</S.Wrap>;
 }
 
 export default IconBanner;
