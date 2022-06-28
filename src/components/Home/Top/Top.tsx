@@ -1,3 +1,5 @@
+import ArrowIcon from '@src/assets/icons/icArrowDown.svg';
+import Image from 'next/image';
 import React from 'react';
 
 import * as S from './Top.style';
@@ -20,7 +22,7 @@ function Top() {
       </S.TextWrap>
       <S.ScrollWrap>
         <S.ScrollText>Scroll</S.ScrollText>
-        <S.ScrollArrow />
+        <Image src={ArrowIcon} width="20px" alt="아래 화살표" />
       </S.ScrollWrap>
     </S.Wrap>
   );

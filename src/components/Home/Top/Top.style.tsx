@@ -49,7 +49,6 @@ export const SoptDescription = styled.h3`
 `;
 
 export const ScrollWrap = styled.div`
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,7 +58,6 @@ export const ScrollWrap = styled.div`
 `;
 
 export const ScrollText = styled.p`
-
   margin-bottom: 20px;
   text-align: center;
   font-family: 'SUIT';
