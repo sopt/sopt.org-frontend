@@ -8,7 +8,6 @@ export const TitleWrap = styled.div`
 `;
 
 export const TitleKorean = styled.p`
-
   letter-spacing: -0.03em;
   font-family: 'SUIT';
   font-size: 48px;

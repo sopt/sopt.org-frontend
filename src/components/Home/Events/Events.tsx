@@ -1,3 +1,6 @@
+import AppjamImage from '@src/assets/images/Appjam.svg';
+import SopkathonImage from '@src/assets/images/Sopkathon.svg';
+import SoptTermImage from '@src/assets/images/Sopt-Term.svg';
 import RoundButton from '@src/components/common/RoundButton';
 import { EventDetailNumbers } from '@src/types/EventDetailNumbers';
 import React from 'react';
@@ -27,17 +30,22 @@ function Events() {
   return (
     <S.Root>
       <S.EventWrap>
-        <Event titleKorean="앱잼" titleEnglish="Appjam" imageSrc="" eventDetails={appjamInfo} />
+        <Event
+          titleKorean="앱잼"
+          titleEnglish="Appjam"
+          imageSrc={AppjamImage}
+          eventDetails={appjamInfo}
+        />
         <Event
           titleKorean="솝커톤"
           titleEnglish="Sopkathon"
-          imageSrc=""
+          imageSrc={SopkathonImage}
           eventDetails={sopkathonInfo}
         />
         <Event
           titleKorean="솝텀프로젝트"
           titleEnglish="SOPT-term"
-          imageSrc=""
+          imageSrc={SoptTermImage}
           eventDetails={soptTermInfo}
         />
       </S.EventWrap>
