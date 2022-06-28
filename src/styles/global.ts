@@ -6,4 +6,8 @@ export const global = css`
   h1, h2, h3, h4, h5, h6, p {
     color: #fcfcfc;
   }
+
+  body {
+    background-color: #181818;
+  }
 `;
