@@ -24,7 +24,11 @@ export const TitleEnglish = styled.p`
 `;
 
 export const TextWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-top: 70px;
   border-left: 10px solid ${({ theme }) => theme.colors.mainColor};
-  padding: 0px 40px;
+  padding-left: 40px;
+  height: 226px;
 `;
