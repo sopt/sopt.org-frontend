@@ -1,3 +1,4 @@
+import Events from '@src/components/Home/Events';
 import Introduce from '@src/components/Home/Introduce';
 import Top from '@src/components/Home/Top';
 import type { NextPage } from 'next';
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
 
       <Top />
       <Introduce />
+      <Events />
     </div>
   );
 };
