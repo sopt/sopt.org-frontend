@@ -1,3 +1,4 @@
+import RoundButton from '@src/components/common/RoundButton';
 import { EventDetailNumbers } from '@src/types/EventDetailNumbers';
 import React from 'react';
 
@@ -40,6 +41,7 @@ function Events() {
           eventDetails={soptTermInfo}
         />
       </S.EventWrap>
+      <RoundButton>SOPT 서비스 구경하기</RoundButton>
     </S.Root>
   );
 }

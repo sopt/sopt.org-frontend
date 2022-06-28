@@ -19,9 +19,11 @@ function Event({ titleKorean, titleEnglish, imageSrc, eventDetails }: EventProps
         <S.TitleEnglish>{titleEnglish}</S.TitleEnglish>
       </S.TitleWrap>
       {/* <Image src={imageSrc} width="400px" alt="행사 이미지" /> */}
-      {eventDetails.map((event: EventDetailNumbers) => (
-        <DetailInfo key={event.order} eventInfo={event} />
-      ))}
+      <S.TextWrap>
+        {eventDetails.map((event: EventDetailNumbers) => (
+          <DetailInfo key={event.order} eventInfo={event} />
+        ))}
+      </S.TextWrap>
     </S.Wrap>
   );
 }
