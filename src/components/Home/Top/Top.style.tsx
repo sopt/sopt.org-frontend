@@ -6,7 +6,13 @@ export const Wrap = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
-  background-image: url(${bgImg.src});
+  background: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0.72) 24.06%,
+      rgba(17, 17, 17, 0.5) 83.35%,
+      #181818 99.41%
+    ),
+    url(${bgImg.src});
   background-repeat: no-repeat;
   background-size: cover;
 
