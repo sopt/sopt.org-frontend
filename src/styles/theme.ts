@@ -4,6 +4,7 @@ const theme: Theme = {
   colors: {
     mainColor: mainColor.mainColor,
     mainBannerColor: mainColor.mainBannerColor,
+    soptWhite: mainColor.white,
   },
 };
 
