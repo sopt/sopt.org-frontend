@@ -6,7 +6,7 @@ export const Root = styled.h1`
 
   width: max-content;
   line-height: 62px;
-  font-family: 'SUIT';
+  font-family: 'SUIT', arial;
   font-size: 50px;
   font-weight: 800;
   font-style: normal;

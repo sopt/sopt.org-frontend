@@ -49,7 +49,7 @@ export const TextWrap = styled.div`
 export const Description = styled.p`
   margin-bottom: 70px;
   line-height: 50px;
-  font-family: 'SUIT';
+  font-family: 'SUIT', arial;
   font-size: 24px;
   font-weight: 800;
   font-style: normal;

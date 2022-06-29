@@ -18,7 +18,7 @@ export const RoundName = styled.p`
   letter-spacing: -0.04em;
   color: ${({ theme }) => theme.colors.soptWhite};
 
-  font-family: 'SUIT';
+  font-family: 'SUIT', arial;
   font-size: 24px;
   font-weight: 700;
   font-style: normal;

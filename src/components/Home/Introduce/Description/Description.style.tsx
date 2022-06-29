@@ -15,7 +15,7 @@ export const Description = styled.p`
   text-align: center;
   line-height: 220%;
 
-  font-family: 'SUIT';
+  font-family: 'SUIT', arial;
   font-size: 24px;
   font-weight: 400;
   font-style: normal;

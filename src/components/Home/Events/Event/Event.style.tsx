@@ -9,7 +9,7 @@ export const TitleWrap = styled.div`
 
 export const TitleKorean = styled.p`
   letter-spacing: -0.03em;
-  font-family: 'SUIT';
+  font-family: 'SUIT', arial;
   font-size: 48px;
   font-weight: 700;
   font-style: normal;
@@ -17,7 +17,7 @@ export const TitleKorean = styled.p`
 
 export const TitleEnglish = styled.p`
   line-height: 30px;
-  font-family: 'SUIT';
+  font-family: 'SUIT', arial;
   font-size: 24px;
   font-weight: 900;
   font-style: normal;

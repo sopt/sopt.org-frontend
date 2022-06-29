@@ -17,7 +17,7 @@ export const Root = styled.button<StyleProps>`
       ? ({ theme }) => theme.colors.soptWhite
       : ({ theme }) => theme.colors.mainColor};
 
-  font-family: 'SUIT';
+  font-family: 'SUIT', arial;
   font-size: 30px;
   font-weight: 700;
   font-style: normal;

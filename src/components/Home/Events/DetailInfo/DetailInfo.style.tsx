@@ -11,7 +11,7 @@ export const TitleLabel = styled.p`
   /* identical to box height */
 
   letter-spacing: -0.04em;
-  font-family: 'SUIT';
+  font-family: 'SUIT', arial;
   font-size: 24px;
   font-weight: 500;
   font-style: normal;
@@ -20,7 +20,7 @@ export const TitleLabel = styled.p`
 export const NumberLabel = styled.p`
   line-height: 52px;
   letter-spacing: 0.05em;
-  font-family: 'SUIT';
+  font-family: 'SUIT', arial;
   font-size: 42px;
   font-weight: 900;
   font-style: normal;
@@ -31,7 +31,7 @@ export const UnitLabel = styled.p`
   /* identical to box height */
 
   letter-spacing: -0.04em;
-  font-family: 'SUIT';
+  font-family: 'SUIT', arial;
   font-size: 24px;
   font-weight: 500;
   font-style: normal;
