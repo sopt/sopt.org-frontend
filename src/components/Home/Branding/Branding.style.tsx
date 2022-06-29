@@ -28,7 +28,6 @@ export const SymbolsWrap = styled.div`
 
 export const TextWrap = styled.div`
   margin-left: 140px;
-  width: 600px;
 `;
 
 export const DescriptionLabel = styled.p`
