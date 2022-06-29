@@ -7,7 +7,7 @@ function IconBanner() {
   const imgList = Array(50).fill(Logo);
 
   return (
-    <Marquee pauseOnHover={true} gradient={false}>
+    <Marquee pauseOnHover={true} gradient={false} speed={50}>
       {imgList.map((imgSrc) => (
         <Image key={imgSrc.id} src={imgSrc} width="64px" height="64px" alt="프로덕트 로고" />
       ))}
