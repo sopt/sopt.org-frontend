@@ -33,6 +33,8 @@ export const TextWrap = styled.div`
 export const DescriptionLabel = styled.p`
   margin-bottom: 90px;
   line-height: 50px;
+
+  white-space: pre-line;
   font-family: 'SUIT', arial;
   font-size: 24px;
   font-weight: 400;
