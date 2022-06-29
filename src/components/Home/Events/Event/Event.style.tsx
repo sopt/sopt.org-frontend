@@ -16,6 +16,8 @@ export const TitleKorean = styled.p`
 `;
 
 export const TitleEnglish = styled.p`
+
+  margin-left: 15px;
   line-height: 30px;
   font-family: 'SUIT', arial;
   font-size: 24px;
