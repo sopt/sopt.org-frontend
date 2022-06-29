@@ -32,7 +32,6 @@ export const PlainCircleText = styled.p`
 `;
 
 export const GradientCircleText = styled.p`
-
   border: 4px solid ${({ theme }) => theme.colors.mainColor};
   border-radius: 150px;
   padding: 72px 48px;
@@ -48,7 +47,6 @@ export const TextWrap = styled.div`
 `;
 
 export const Description = styled.p`
-
   margin-bottom: 70px;
   line-height: 50px;
   font-family: 'SUIT';
