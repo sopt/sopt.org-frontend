@@ -19,7 +19,7 @@ export const ContentWrap = styled.div`
 
 export const StepWrap = styled.div`
   display: flex;
-
+  align-items: center;
   padding-top: 67px;
 `;
 
