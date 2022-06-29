@@ -6,7 +6,6 @@ export const Root = styled.div`
 `;
 
 export const TitleLabel = styled.p`
-
   width: 146px;
   line-height: 30px;
   /* identical to box height */
