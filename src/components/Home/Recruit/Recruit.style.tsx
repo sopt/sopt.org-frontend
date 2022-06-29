@@ -24,7 +24,6 @@ export const StepWrap = styled.div`
 `;
 
 export const PlainCircleText = styled.p`
-
   margin-right: 30px;
 
   border: 4px solid ${({ theme }) => theme.colors.soptWhite};
@@ -42,7 +41,6 @@ export const PlainCircleText = styled.p`
 `;
 
 export const GradientCircleText = styled.p`
-
   border: 4px solid ${({ theme }) => theme.colors.mainColor};
   border-radius: 150px;
   padding: 72px 40px;
