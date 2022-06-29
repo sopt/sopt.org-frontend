@@ -1,4 +1,4 @@
-import symbol1 from '@src/assets/replaceMe/brading/symbol(1).svg';
+import symbol1 from '@src/assets/replaceMe/branding/symbol(1).svg';
 import RoundButton from '@src/components/common/RoundButton';
 import UnderlinedTitle from '@src/components/common/UnderlinedTitle';
 import React from 'react';
