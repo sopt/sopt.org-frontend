@@ -3,6 +3,7 @@ import symbol1 from '@src/assets/replaceMe/branding/symbol(1).svg';
 import RoundButton from '@src/components/common/RoundButton';
 import UnderlinedTitle from '@src/components/common/UnderlinedTitle';
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 
 import * as S from './Branding.style';
 import Symbol from './Symbol';
@@ -13,16 +14,24 @@ function Branding() {
 
   return (
     <S.Root>
-      <UnderlinedTitle>{title}</UnderlinedTitle>
+      <Fade top>
+        <UnderlinedTitle>{title}</UnderlinedTitle>
+      </Fade>
       <S.ContentWrap>
-        <S.SymbolsWrap>
-          <Symbol imgSrc={symbol1} name={basicInfo.coreValue[0]} />
-          <Symbol imgSrc={symbol1} name={basicInfo.coreValue[1]} />
-          <Symbol imgSrc={symbol1} name={basicInfo.coreValue[2]} />
-        </S.SymbolsWrap>
+        <Fade delay={300}>
+          <S.SymbolsWrap>
+            <Symbol imgSrc={symbol1} name={basicInfo.coreValue[0]} />
+            <Symbol imgSrc={symbol1} name={basicInfo.coreValue[1]} />
+            <Symbol imgSrc={symbol1} name={basicInfo.coreValue[2]} />
+          </S.SymbolsWrap>
+        </Fade>
         <S.TextWrap>
-          <S.DescriptionLabel>{description}</S.DescriptionLabel>
-          <RoundButton>SOPT 기수별 브랜딩 보기</RoundButton>
+          <Fade delay={600}>
+            <S.DescriptionLabel>{description}</S.DescriptionLabel>
+          </Fade>
+          <Fade delay={1000}>
+            <RoundButton>SOPT 기수별 브랜딩 보기</RoundButton>
+          </Fade>
         </S.TextWrap>
       </S.ContentWrap>
     </S.Root>
