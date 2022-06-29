@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 
 export const Root = styled.div`
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +32,6 @@ export const TextWrap = styled.div`
 `;
 
 export const DescriptionLabel = styled.p`
-
   margin-bottom: 90px;
   line-height: 50px;
   font-family: 'SUIT';
