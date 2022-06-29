@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import Branding from '@src/components/Home/Branding';
 import Events from '@src/components/Home/Events';
 import Introduce from '@src/components/Home/Introduce';
 import Top from '@src/components/Home/Top';
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
         <Top />
         <Introduce />
         <Events />
+        <Branding />
       </Styled.Main>
     </div>
   );
