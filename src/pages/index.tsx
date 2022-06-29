@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import Footer from '@src/components/common/Footer';
 import Branding from '@src/components/Home/Branding';
 import Events from '@src/components/Home/Events';
 import Introduce from '@src/components/Home/Introduce';
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
         <Branding />
         <SoptMarquee isReverse={true} />
         <Recruit />
+        <Footer />
       </Styled.Main>
     </div>
   );
