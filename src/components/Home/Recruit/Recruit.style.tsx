@@ -6,7 +6,7 @@ export const Root = styled.div`
 
   margin-left: 240px;
   width: 100vw;
-  height: 50vh;
+  height: 70vh;
 
   scroll-snap-align: center;
 `;
