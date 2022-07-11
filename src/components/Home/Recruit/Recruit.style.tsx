@@ -1,14 +1,23 @@
 import styled from '@emotion/styled';
+
 export const Root = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 
-  margin-left: 240px;
-  width: 100vw;
-  height: 80vh;
-
+  height: calc(100vh - 163px); /* 163px은 푸터 */
   scroll-snap-align: center;
+`;
+
+export const Wrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 120px;
+
+  padding-top: 15vh;
+  width: 1280px;
 `;
 
 export const ContentWrap = styled.div`
@@ -20,45 +29,42 @@ export const ContentWrap = styled.div`
 export const StepWrap = styled.div`
   display: flex;
   align-items: center;
-  padding-top: 67px;
+  padding-top: 24px;
 `;
 
 export const PlainCircleText = styled.p`
   margin-right: 30px;
 
-  border: 4px solid ${({ theme }) => theme.colors.soptWhite};
-  border-radius: 150px;
-  padding: 72px 48px;
-  /* identical to box height */
-
+  border: 1.5px solid ${({ theme }) => theme.colors.soptWhite};
+  border-radius: 65px;
+  padding: 55px 41px;
   text-align: center;
-  line-height: 35px;
+  line-height: 20px;
   letter-spacing: -0.04em;
+
   font-family: 'SUIT', arial;
-  font-size: 28px;
+  font-size: 16px;
   font-weight: 500;
-  font-style: normal;
 `;
 
 export const GradientCircleText = styled.p`
-  border: 4px solid ${({ theme }) => theme.colors.mainColor};
-  border-radius: 150px;
-  padding: 72px 40px;
-  /* identical to box height */
-
+  border: 1.5px solid ${({ theme }) => theme.colors.mainColor};
+  border-radius: 65px;
+  padding: 55px 36px;
   text-align: center;
-  line-height: 35px;
+  line-height: 20px;
   letter-spacing: -0.04em;
+
   color: ${({ theme }) => theme.colors.mainColor};
+
   font-family: 'SUIT', arial;
-  font-size: 28px;
+  font-size: 16px;
   font-weight: 500;
-  font-style: normal;
 `;
 
 export const ArrowIcon = styled.img`
   transform: rotate(-90deg);
-  margin-right: 30px;
+  margin-right: 17px;
 `;
 
 export const TextWrap = styled.div`
@@ -66,10 +72,11 @@ export const TextWrap = styled.div`
 `;
 
 export const Description = styled.p`
-  margin-bottom: 70px;
-  line-height: 50px;
+  margin-bottom: 40px;
+  line-height: 200%;
+  letter-spacing: -0.03em;
+
   font-family: 'SUIT', arial;
-  font-size: 24px;
-  font-weight: 800;
-  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
 `;
