@@ -7,7 +7,7 @@ export const Root = styled.div`
   justify-content: space-between;
 
   height: calc(100vh - 163px); /* 163px은 푸터 */
-  scroll-snap-align: center;
+  scroll-snap-align: bottom;
 `;
 
 export const Wrap = styled.div`
