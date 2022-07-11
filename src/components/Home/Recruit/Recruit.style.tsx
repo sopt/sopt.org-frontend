@@ -33,7 +33,7 @@ export const StepWrap = styled.div`
 `;
 
 export const PlainCircleText = styled.p`
-  margin-right: 30px;
+  margin-right: 17px;
 
   border: 1.5px solid ${({ theme }) => theme.colors.soptWhite};
   border-radius: 65px;
