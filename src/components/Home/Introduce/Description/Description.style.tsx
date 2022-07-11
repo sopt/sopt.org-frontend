@@ -5,18 +5,16 @@ export const Wrap = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 92vh; /* 나머지 8vh는 IconBanner */
+  height: calc(100vh - 155px); /* 155px은 IconBanner */
 `;
 
 export const Description = styled.p`
-  margin-top: 50px;
-  margin-bottom: 70px;
+  margin-top: 35px;
+  margin-bottom: 32px;
 
   text-align: center;
   line-height: 220%;
-
   font-family: 'SUIT', arial;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
-  font-style: normal;
 `;

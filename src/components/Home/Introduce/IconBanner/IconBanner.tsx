@@ -9,7 +9,7 @@ function IconBanner() {
   return (
     <Marquee pauseOnHover={true} gradient={false} speed={50}>
       {imgList.map((imgSrc) => (
-        <Image key={imgSrc.id} src={imgSrc} width="64px" height="64px" alt="프로덕트 로고" />
+        <Image key={imgSrc.id} src={imgSrc} width="55px" height="55px" alt="프로덕트 로고" />
       ))}
     </Marquee>
   );

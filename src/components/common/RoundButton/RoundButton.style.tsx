@@ -5,20 +5,20 @@ interface StyleProps {
 }
 
 export const Root = styled.button<StyleProps>`
-  border-radius: 38.5px;
+  border-radius: 24.5px;
   background: ${(props: StyleProps) =>
     props.isReverse
       ? ({ theme }) => theme.colors.mainColor
       : ({ theme }) => theme.colors.soptWhite};
-  padding: 20px 64px;
-  line-height: 37px;
+
+  padding: 12px 40px;
+  line-height: 25px;
   color: ${(props: StyleProps) =>
     props.isReverse
       ? ({ theme }) => theme.colors.soptWhite
       : ({ theme }) => theme.colors.mainColor};
 
   font-family: 'SUIT', arial;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
-  font-style: normal;
 `;

@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 import bgImg from '@src/assets/images/bg-img.svg';
 
 export const Root = styled.div`
-
   display: flex;
   justify-content: center;
   background: linear-gradient(
@@ -22,7 +21,6 @@ export const Root = styled.div`
 `;
 
 export const Wrap = styled.div`
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
