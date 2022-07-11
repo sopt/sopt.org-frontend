@@ -21,7 +21,6 @@ const Home: NextPage = () => {
         <Top />
         <Introduce />
         <Events />
-        <SoptMarquee />
         <Branding />
         <SoptMarquee isReverse={true} />
         <Recruit />

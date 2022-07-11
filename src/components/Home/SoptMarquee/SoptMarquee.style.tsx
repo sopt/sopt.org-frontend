@@ -9,7 +9,7 @@ export const StyleWrap = styled.div<StyleProps>`
     background-color: ${(props: StyleProps) =>
       props.isReverse ? 'transparent' : ({ theme }) => theme.colors.mainColor};
 
-    padding: 8px 0px;
+    padding: 7px 0px;
     line-height: 110%;
     color: ${(props: StyleProps) =>
       props.isReverse
@@ -17,8 +17,7 @@ export const StyleWrap = styled.div<StyleProps>`
         : ({ theme }) => theme.colors.soptWhite};
 
     font-family: 'SUIT', arial;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 900;
-    font-style: normal;
   }
 `;
