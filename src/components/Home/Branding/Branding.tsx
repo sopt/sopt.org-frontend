@@ -5,6 +5,7 @@ import UnderlinedTitle from '@src/components/common/UnderlinedTitle';
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
+import SoptMarquee from '../SoptMarquee';
 import * as S from './Branding.style';
 import Symbol from './Symbol';
 
@@ -14,26 +15,29 @@ function Branding() {
 
   return (
     <S.Root>
-      <Fade top>
-        <UnderlinedTitle>{title}</UnderlinedTitle>
-      </Fade>
-      <S.ContentWrap>
-        <Fade delay={300}>
-          <S.SymbolsWrap>
-            <Symbol imgSrc={symbol1} name={basicInfo.coreValue[0]} />
-            <Symbol imgSrc={symbol1} name={basicInfo.coreValue[1]} />
-            <Symbol imgSrc={symbol1} name={basicInfo.coreValue[2]} />
-          </S.SymbolsWrap>
+      <S.Wrap>
+        <Fade top>
+          <UnderlinedTitle>{title}</UnderlinedTitle>
         </Fade>
-        <S.TextWrap>
-          <Fade delay={600}>
-            <S.DescriptionLabel>{description}</S.DescriptionLabel>
+        <S.ContentWrap>
+          <Fade delay={300}>
+            <S.SymbolsWrap>
+              <Symbol imgSrc={symbol1} name={basicInfo.coreValue[0]} />
+              <Symbol imgSrc={symbol1} name={basicInfo.coreValue[1]} />
+              <Symbol imgSrc={symbol1} name={basicInfo.coreValue[2]} />
+            </S.SymbolsWrap>
           </Fade>
-          <Fade delay={1000}>
-            <RoundButton>SOPT 기수별 브랜딩 보기</RoundButton>
-          </Fade>
-        </S.TextWrap>
-      </S.ContentWrap>
+          <S.TextWrap>
+            <Fade delay={600}>
+              <S.DescriptionLabel>{description}</S.DescriptionLabel>
+            </Fade>
+            <Fade delay={1000}>
+              <RoundButton>SOPT 기수별 브랜딩 보기</RoundButton>
+            </Fade>
+          </S.TextWrap>
+        </S.ContentWrap>
+      </S.Wrap>
+      <SoptMarquee isReverse={true} />
     </S.Root>
   );
 }

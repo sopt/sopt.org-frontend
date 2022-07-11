@@ -22,7 +22,6 @@ const Home: NextPage = () => {
         <Introduce />
         <Events />
         <Branding />
-        <SoptMarquee isReverse={true} />
         <Recruit />
         <Footer />
       </Styled.Main>

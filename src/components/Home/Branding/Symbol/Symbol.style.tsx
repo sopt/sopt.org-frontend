@@ -7,19 +7,19 @@ export const Root = styled.div`
 `;
 
 export const RoundName = styled.p`
-  margin-top: 40px;
+  margin-top: 25px;
 
   border: 3px solid ${({ theme }) => theme.colors.soptWhite};
-  border-radius: 25px;
+  border-radius: 16px;
   background-color: transparent;
-
-  padding: 10px 51.5px;
+  padding: 6px 31px;
   text-align: center;
+  line-height: 20px;
   letter-spacing: -0.04em;
+
   color: ${({ theme }) => theme.colors.soptWhite};
 
   font-family: 'SUIT', arial;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 700;
-  font-style: normal;
 `;

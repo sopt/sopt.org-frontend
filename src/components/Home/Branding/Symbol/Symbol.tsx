@@ -10,7 +10,7 @@ interface SymbolProps {
 function Symbol({ imgSrc, name }: SymbolProps) {
   return (
     <S.Root>
-      <Image src={imgSrc} width="200px" alt="브랜딩 심볼 이미지" />
+      <Image src={imgSrc} width="140px" alt="브랜딩 심볼 이미지" />
       <S.RoundName>{name}</S.RoundName>
     </S.Root>
   );
