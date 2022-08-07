@@ -6,6 +6,7 @@ declare module '@emotion/react' {
       mainColor: string;
       mainBannerColor: string;
       soptWhite: string;
+      black40: string;
     };
   }
 }

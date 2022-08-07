@@ -129,10 +129,11 @@ interface RevealProps {
    * @property {boolean}
    */
   when?: boolean;
+  children?: JSX.Element;
 }
 
 declare module 'react-reveal/Bounce' {
-  import React from 'react';
+  import React, { ReactComponentElement } from 'react';
 
   class Animation extends React.Component<RevealProps> {}
   export default Animation;

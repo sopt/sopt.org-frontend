@@ -5,6 +5,7 @@ const theme: Theme = {
     mainColor: mainColor.mainColor,
     mainBannerColor: mainColor.mainBannerColor,
     soptWhite: mainColor.white,
+    black40: '#333333',
   },
 };
 
