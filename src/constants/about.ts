@@ -1,4 +1,5 @@
-import { ABOUT_INFO_TYPE, AboutInfoType, PartInfos, PartKorean } from '@src/types';
+import { appjamProductInfo } from '@src/assets/replaceMe/statistics';
+import { ABOUT_INFO_TYPE, AboutInfoType, PartInfos } from '@src/types';
 
 export const ABOUT_INFO: Record<AboutInfoType, ABOUT_INFO_TYPE> = {
   SEMINAR: {
@@ -74,3 +75,16 @@ export const PART_INFO: PartInfos[] = [
     delay: 900,
   },
 ];
+
+export const APPJAM_INFO = {
+  RELEASE: {
+    KO: '스토어 릴리즈',
+    EN: 'Release',
+    COUNT: appjamProductInfo.RELEASE,
+  },
+  FOUNDATION: {
+    KO: '창업',
+    EN: 'Foundation',
+    COUNT: appjamProductInfo.FOUNDATION,
+  },
+};
