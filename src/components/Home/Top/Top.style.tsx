@@ -15,9 +15,11 @@ export const Root = styled.div`
   background-size: cover;
 
   width: 100vw;
-  height: 100vh;
 
-  scroll-snap-align: center;
+  @media (min-width: 1280px) {
+    height: 100vh;
+    scroll-snap-align: center;
+  }
 `;
 
 export const Wrap = styled.div`
@@ -25,11 +27,20 @@ export const Wrap = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: 1280px;
+
+  @media (max-width: 1279px) {
+    width: 375px;
+  }
 `;
 
 export const TextWrap = styled.div`
   margin-top: 120px;
   margin-left: 60px;
+
+  @media (max-width: 1279px) {
+    margin-top: 203px;
+    margin-left: 11px;
+  }
 `;
 
 export const SoptTitle = styled.h1`
@@ -37,6 +48,11 @@ export const SoptTitle = styled.h1`
   font-family: 'SUIT', arial;
   font-size: 60px;
   font-weight: 900;
+
+  @media (max-width: 1279px) {
+    width: 177px;
+    font-size: 40px;
+  }
 `;
 
 export const SoptSubtitle = styled.h2`
@@ -49,6 +65,11 @@ export const SoptSubtitle = styled.h2`
   font-family: 'SUIT', arial;
   font-size: 30px;
   font-weight: 700;
+
+  @media (max-width: 1279px) {
+    width: 180px;
+    font-size: 24px;
+  }
 `;
 
 export const SoptDescription = styled.h3`
@@ -59,6 +80,14 @@ export const SoptDescription = styled.h3`
   font-family: 'SUIT', arial;
   font-size: 20px;
   font-weight: 300;
+
+  @media (max-width: 1279px) {
+
+    margin-top: 148px;
+    margin-bottom: 46px;
+    width: 232px;
+    font-size: 16px;
+  }
 `;
 
 export const ScrollWrap = styled.div`
@@ -76,4 +105,8 @@ export const ScrollText = styled.p`
   font-family: 'SUIT', arial;
   font-size: 20px;
   font-weight: 500;
+
+  @media (max-width: 1279px) {
+    font-size: 14px;
+  }
 `;

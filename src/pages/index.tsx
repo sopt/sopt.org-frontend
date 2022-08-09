@@ -33,8 +33,10 @@ export default Home;
 
 const Styled = {
   Main: styled.main`
-    height: 100vh;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    @media (min-width: 1280px) {
+      height: 100vh;
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+    }
   `,
 };
