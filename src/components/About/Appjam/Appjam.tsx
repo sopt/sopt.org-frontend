@@ -4,9 +4,9 @@ import { ABOUT_INFO } from '@src/constants/about';
 import React from 'react';
 
 import AboutWrapper from '../AboutWrapper';
-import PartInfos from '../Seminar/PartInfos';
 import * as S from './Appjam.style';
 import AppjamBox from './AppjamBox';
+import AppjamStep from './AppjamStep';
 function Appjam() {
   return (
     <AboutWrapper>
@@ -21,7 +21,7 @@ function Appjam() {
         rightProps={<AppjamBox />}
       />
       <AboutWrapper.Content>
-        <PartInfos />
+        <AppjamStep />
       </AboutWrapper.Content>
     </AboutWrapper>
   );

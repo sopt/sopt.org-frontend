@@ -40,8 +40,6 @@ export const AppjamInfoWrapper = styled.div`
         letter-spacing: -0.04em;
         font-size: 16px;
         font-weight: 500;
-        /* margin-left: 30px;
-      margin-right: 20px; */
       }
       &:nth-child(2) {
         line-height: 27px;
@@ -68,4 +66,7 @@ export const DownloadBtnWrapper = styled.div`
   display: flex;
   margin-top: 10px;
   margin-bottom: 10px;
+  & img {
+    cursor: pointer;
+  }
 `;

@@ -14,7 +14,7 @@ export const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 160px;
+  margin-top: 200px;
   width: 1040px;
 `;
 

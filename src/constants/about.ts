@@ -88,3 +88,21 @@ export const APPJAM_INFO = {
     COUNT: appjamProductInfo.FOUNDATION,
   },
 };
+
+export const APPJAM_STEP = [
+  { title: '기획 경선', isGradient: false, delay: 300 },
+  {
+    title: `기획/디자인
+  파트 팀빌딩`,
+    isGradient: false,
+    delay: 500,
+  },
+  {
+    title: `개발파트
+  팀빌딩`,
+    isGradient: false,
+    delay: 700,
+  },
+  { title: '앱잼', isGradient: true, delay: 900 },
+  { title: '데모데이', isGradient: true, delay: 1100 },
+];
