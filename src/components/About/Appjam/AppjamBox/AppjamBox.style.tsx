@@ -58,6 +58,7 @@ export const AppjamInfoWrapper = styled.div`
     width: 146px;
   }
   .bottom__info {
+    margin-left: 61px;
     width: 85px;
   }
 `;

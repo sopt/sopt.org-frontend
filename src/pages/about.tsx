@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import AboutHead from '@src/components/About/AboutHead';
 import Appjam from '@src/components/About/Appjam';
 import Seminar from '@src/components/About/Seminar';
+import Sopkaton from '@src/components/About/Sopkaton';
 import Footer from '@src/components/common/Footer';
 import React from 'react';
 
@@ -12,6 +13,7 @@ function about() {
       <Styled.Main>
         <Seminar />
         <Appjam />
+        <Sopkaton />
       </Styled.Main>
       <Footer />
     </>
