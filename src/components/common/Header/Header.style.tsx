@@ -7,6 +7,7 @@ export const Header = styled.header`
 
   position: fixed;
   justify-content: space-between;
+  z-index: 9;
   margin: 30px 60px;
   width: calc(100% - 120px);
 `;
