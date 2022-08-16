@@ -72,7 +72,6 @@ export const PlainCircleText = styled.p`
 
   /* 모바일 뷰 */
   @media (max-width: 1279px) {
-
     margin-right: 6px;
     border-radius: 45px;
     padding: 35px 20px;
@@ -95,7 +94,6 @@ export const GradientCircleText = styled.p`
 
   /* 모바일 뷰 */
   @media (max-width: 1279px) {
-
     margin-right: 6px;
     border-radius: 45px;
     padding: 35px 16px;
