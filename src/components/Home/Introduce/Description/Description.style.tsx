@@ -5,7 +5,15 @@ export const Wrap = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 155px); /* 155px은 IconBanner */
+
+  @media (min-width: 1280px) {
+    height: calc(100vh - 155px); /* 155px은 IconBanner */
+  }
+
+  @media (max-width: 1279px) {
+    margin-top: 80px;
+    width: 375px;
+  }
 `;
 
 export const Description = styled.p`
@@ -17,4 +25,10 @@ export const Description = styled.p`
   font-family: 'SUIT', arial;
   font-size: 16px;
   font-weight: 400;
+
+  @media (max-width: 1279px) {
+    margin-bottom: 80px;
+    padding: 0 16px;
+    font-size: 14px;
+  }
 `;

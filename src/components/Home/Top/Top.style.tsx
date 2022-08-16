@@ -82,7 +82,6 @@ export const SoptDescription = styled.h3`
   font-weight: 300;
 
   @media (max-width: 1279px) {
-
     margin-top: 148px;
     margin-bottom: 46px;
     width: 232px;

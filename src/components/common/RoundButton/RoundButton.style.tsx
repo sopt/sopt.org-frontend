@@ -21,4 +21,9 @@ export const Root = styled.button<StyleProps>`
   font-family: 'SUIT', arial;
   font-size: 20px;
   font-weight: 700;
+
+  @media (max-width: 1279px) {
+    border-radius: 24px;
+    font-size: 18px;
+  }
 `;
