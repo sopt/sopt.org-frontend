@@ -1,25 +1,33 @@
 import styled from '@emotion/styled';
-import menuBar from '@src/assets/icons/menuBar.svg';
-import logoIcon from '@src/assets/replaceMe/branding/logo.png';
+interface StyleProps {
+  src: string;
+}
 
 export const Header = styled.header`
   display: flex;
-
   position: fixed;
-  justify-content: space-between;
+  justify-content: center;
   z-index: 9;
-  margin: 30px 60px;
-  width: calc(100% - 120px);
+  width: 100%;
 `;
 
-export const Logo = styled.button`
-  background: blue;
+export const Wrap = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 60px;
+  width: 1160px;
+`;
+
+export const Logo = styled.button<StyleProps>`
+  background: url(${(props) => props.src}) no-repeat;
+  background-size: cover;
   width: 125px;
   height: 41px;
 `;
 
-export const HamburgerBar = styled.button`
-  background: red;
+export const HamburgerBar = styled.button<StyleProps>`
+  background: url(${(props) => props.src}) no-repeat;
+  background-size: cover;
   width: 24px;
   height: 24px;
 `;
