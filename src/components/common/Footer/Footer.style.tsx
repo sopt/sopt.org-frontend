@@ -16,7 +16,6 @@ export const Root = styled.div`
 
   /* 모바일 뷰 */
   @media (max-width: 1279px) {
-
     display: flex;
     justify-content: center;
     height: 192px;
@@ -26,16 +25,20 @@ export const Root = styled.div`
 export const ContentWrap = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 0px 240px;
-  padding-top: 35px;
+
+  /* 데스크탑 뷰 */
+  @media (min-width: 1280px) {
+    margin: 0px 240px;
+    padding-top: 35px;
+  }
 
   /* 모바일 뷰 */
   @media (max-width: 1279px) {
-
     flex-direction: column;
     justify-content: start;
 
     padding-top: 30px;
+    padding-left: 9px;
     width: 327px;
   }
 `;
