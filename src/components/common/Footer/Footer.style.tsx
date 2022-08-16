@@ -9,7 +9,18 @@ export const Root = styled.div`
   width: 100vw;
   height: 163px;
 
-  scroll-snap-align: center;
+  /* 데스크탑 뷰 */
+  @media (min-width: 1280px) {
+    scroll-snap-align: center;
+  }
+
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+
+    display: flex;
+    justify-content: center;
+    height: 192px;
+  }
 `;
 
 export const ContentWrap = styled.div`
@@ -17,6 +28,16 @@ export const ContentWrap = styled.div`
   justify-content: space-between;
   margin: 0px 240px;
   padding-top: 35px;
+
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+
+    flex-direction: column;
+    justify-content: start;
+
+    padding-top: 30px;
+    width: 327px;
+  }
 `;
 
 export const InfoWrap = styled.div``;
@@ -38,9 +59,16 @@ export const CopyrightText = styled.p`
   font-family: 'SUIT', arial;
   font-size: 14px;
   font-weight: 400;
+
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+    font-size: 12px;
+  }
 `;
 
-export const ChannelsWrap = styled.div``;
+export const ChannelsWrap = styled.div`
+  width: 190px;
+`;
 
 export const ChannelTitleText = styled.p`
   line-height: 20px;
@@ -56,6 +84,11 @@ export const ChannelButtonsWrap = styled.div`
 
   margin-top: 25px;
   height: 30px;
+
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+    margin-top: 20px;
+  }
 `;
 
 export const ChannelButton = styled.button<StyleProps>`

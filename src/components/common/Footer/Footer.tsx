@@ -4,10 +4,15 @@ import kakaoLogo from '@src/assets/icons/kakao_logo.svg';
 import mailLogo from '@src/assets/icons/mail_logo.svg';
 import youtubeLogo from '@src/assets/icons/youtube_logo.svg';
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 import * as S from './Footer.style';
 
 function Footer() {
+  const isDesktop = useMediaQuery({
+    query: '(min-width: 1280px)',
+  });
+
   const channelsList = [
     mailLogo.src,
     facebookLogo.src,
@@ -28,7 +33,7 @@ function Footer() {
           </S.CopyrightText>
         </S.InfoWrap>
         <S.ChannelsWrap>
-          <S.ChannelTitleText>SOPT 채널 바로가기</S.ChannelTitleText>
+          {isDesktop && <S.ChannelTitleText>SOPT 채널 바로가기</S.ChannelTitleText>}
           <S.ChannelButtonsWrap>
             {channelsList.map((imgSrc) => (
               <S.ChannelButton key={imgSrc.id} src={imgSrc} />
