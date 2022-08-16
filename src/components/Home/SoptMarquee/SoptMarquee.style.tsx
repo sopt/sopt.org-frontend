@@ -19,5 +19,10 @@ export const StyleWrap = styled.div<StyleProps>`
     font-family: 'SUIT', arial;
     font-size: 24px;
     font-weight: 900;
+
+    /* 모바일 뷰 */
+    @media (max-width: 1279px) {
+      font-size: 18px;
+    }
   }
 `;
