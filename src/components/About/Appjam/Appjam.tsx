@@ -1,7 +1,6 @@
 import AppjamBackgrouondPc from '@src/assets/images/appjam_background.svg';
 import UnderlinedTitle from '@src/components/common/UnderlinedTitle';
 import { ABOUT_INFO } from '@src/constants/about';
-import { url } from 'inspector';
 import Image from 'next/image';
 import React from 'react';
 
@@ -10,9 +9,6 @@ import * as S from './Appjam.style';
 import AppjamBox from './AppjamBox';
 import AppjamStep from './AppjamStep';
 function Appjam() {
-  const placeholder =
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg';
-
   return (
     <S.AppjamWrapper>
       <S.ImageWrapper>
