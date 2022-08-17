@@ -1,11 +1,10 @@
-// import SeminarImg from '@src/assets/images/SeminarImg.svg';
 import UnderlinedTitle from '@src/components/common/UnderlinedTitle';
 import { ABOUT_INFO } from '@src/constants/about';
-import Image from 'next/image';
 
 import AboutWrapper from '../AboutWrapper';
 import * as S from './Sopkaton.style';
 import SopkatonImage from './SopkatonImage';
+import Subjects from './Subjects';
 
 function Sopkaton() {
   return (
@@ -21,7 +20,7 @@ function Sopkaton() {
         rightProps={<SopkatonImage />}
       />
       <AboutWrapper.Content>
-        <div>히히</div>
+        <Subjects />
       </AboutWrapper.Content>
     </AboutWrapper>
   );
