@@ -21,3 +21,16 @@ export const Contents = styled.div`
   font-weight: 400;
   font-style: normal;
 `;
+
+export const ImageWrapper = styled.div`
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-584px);
+  width: fit-content;
+  height: fit-content;
+`;
+
+export const AppjamWrapper = styled.div`
+  position: relative;
+`;

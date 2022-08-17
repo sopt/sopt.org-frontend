@@ -5,24 +5,26 @@ import * as S from './AboutWrapper.style.';
 
 interface AboutWrapperProps {
   children: ReactNode;
+  [key: string]: any;
 }
 
 interface AboutTopProps {
   leftProps: ReactElement<any, any>;
   rightProps: ReactElement<any, any>;
+  [key: string]: any;
 }
 
-function AboutWrapper({ children }: AboutWrapperProps) {
+function AboutWrapper({ children, ...props }: AboutWrapperProps) {
   return (
-    <S.Root>
+    <S.Root {...props}>
       <S.Wrap>{children}</S.Wrap>
     </S.Root>
   );
 }
 
-AboutWrapper.Top = function AboutWrapperTop({ leftProps, rightProps }: AboutTopProps) {
+AboutWrapper.Top = function AboutWrapperTop({ leftProps, rightProps, ...props }: AboutTopProps) {
   return (
-    <S.TopBox>
+    <S.TopBox {...props}>
       <Fade top>
         <S.InfoText>{leftProps}</S.InfoText>
       </Fade>
