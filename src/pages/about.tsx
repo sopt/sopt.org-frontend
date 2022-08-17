@@ -5,6 +5,7 @@ import Seminar from '@src/components/About/Seminar';
 import Sopkaton from '@src/components/About/Sopkaton';
 import SoptTerm from '@src/components/About/SoptTerm';
 import StudyNetworking from '@src/components/About/StudyNetworking';
+import Team from '@src/components/About/Team';
 import Footer from '@src/components/common/Footer';
 import React from 'react';
 
@@ -18,8 +19,9 @@ function about() {
         <Sopkaton />
         <StudyNetworking />
         <SoptTerm />
+        <Team />
+        <Footer />
       </Styled.Main>
-      <Footer />
     </>
   );
 }
