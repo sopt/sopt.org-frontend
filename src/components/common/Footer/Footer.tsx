@@ -3,6 +3,7 @@ import instagramLogo from '@src/assets/icons/instagram_logo.svg';
 import kakaoLogo from '@src/assets/icons/kakao_logo.svg';
 import mailLogo from '@src/assets/icons/mail_logo.svg';
 import youtubeLogo from '@src/assets/icons/youtube_logo.svg';
+import Channels from '@src/components/common/Footer/Channels';
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 
@@ -34,11 +35,7 @@ function Footer() {
         </S.InfoWrap>
         <S.ChannelsWrap>
           {isDesktop && <S.ChannelTitleText>SOPT 채널 바로가기</S.ChannelTitleText>}
-          <S.ChannelButtonsWrap>
-            {channelsList.map((imgSrc) => (
-              <S.ChannelButton key={imgSrc.id} src={imgSrc} />
-            ))}
-          </S.ChannelButtonsWrap>
+          <Channels />
         </S.ChannelsWrap>
       </S.ContentWrap>
     </S.Root>

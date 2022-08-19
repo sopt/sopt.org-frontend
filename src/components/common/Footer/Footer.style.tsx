@@ -1,11 +1,7 @@
 import styled from '@emotion/styled';
 
-interface StyleProps {
-  src: string;
-}
-
 export const Root = styled.div`
-  background-color: #333333;
+  background-color: #2a2a2a;
   width: 100vw;
   height: 163px;
 
@@ -74,27 +70,15 @@ export const ChannelsWrap = styled.div`
 `;
 
 export const ChannelTitleText = styled.p`
+
+  margin-bottom: 25px;
   line-height: 20px;
   font-family: 'SUIT', arial;
   font-size: 16px;
   font-weight: 800;
-`;
-
-export const ChannelButtonsWrap = styled.div`
-  display: grid;
-  grid-template-columns: repeat(5, minmax(30px, auto));
-  column-gap: 10px;
-
-  margin-top: 25px;
-  height: 30px;
 
   /* 모바일 뷰 */
   @media (max-width: 1279px) {
-    margin-top: 20px;
+    margin-bottom: 20px;
   }
-`;
-
-export const ChannelButton = styled.button<StyleProps>`
-  background-image: url(${(props: StyleProps) => props.src});
-  background-size: cover;
 `;
