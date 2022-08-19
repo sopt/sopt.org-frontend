@@ -7,6 +7,12 @@ export const appjamInfo: EventDetailNumbers[] = [
   { order: 3, title: '서비스 개수', number: 250, unit: '개+' },
 ];
 
+/* 앱잼 릴리즈, 창업에 대한 통계를 적어주세요. 숫자만 바꾸면 됩니다.*/
+export const appjamProductInfo = {
+  RELEASE: 30,
+  FOUNDATION: 8,
+};
+
 /* 솝커톤에 관한 통계를 적어주세요. number만 바꾸면 됩니다. */
 export const sopkathonInfo: EventDetailNumbers[] = [
   { order: 1, title: '협업 기간', number: 16, unit: '시간' },

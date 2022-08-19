@@ -130,6 +130,7 @@ interface RevealProps {
    * @property {boolean}
    */
   when?: boolean;
+  children?: JSX.Element;
 }
 
 declare module 'react-reveal/Bounce' {

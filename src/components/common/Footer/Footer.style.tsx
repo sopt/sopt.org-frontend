@@ -4,7 +4,7 @@ interface StyleProps {
   src: string;
 }
 
-export const Root = styled.div`
+export const Root = styled.footer`
   background-color: #333333;
   width: 100vw;
   height: 163px;
