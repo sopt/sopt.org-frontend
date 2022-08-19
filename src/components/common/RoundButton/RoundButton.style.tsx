@@ -10,6 +10,7 @@ export const Root = styled.button<StyleProps>`
     props.isReverse
       ? ({ theme }) => theme.colors.mainColor
       : ({ theme }) => theme.colors.soptWhite};
+  cursor: pointer;
 
   padding: 12px 40px;
   line-height: 25px;

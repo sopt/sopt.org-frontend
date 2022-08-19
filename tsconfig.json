@@ -20,6 +20,6 @@
       "@src/*": ["src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/common/BorderRoundButton"],
   "exclude": ["node_modules"]
 }

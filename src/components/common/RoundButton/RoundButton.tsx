@@ -1,9 +1,9 @@
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes, ReactElement } from 'react';
 
 import * as S from './RoundButton.style';
 
 interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
-  children: string;
+  children: string | ReactElement;
   isReverse?: boolean;
   [key: string]: any;
 }

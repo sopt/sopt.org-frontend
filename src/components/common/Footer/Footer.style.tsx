@@ -1,6 +1,10 @@
 import styled from '@emotion/styled';
 
-export const Root = styled.div`
+interface StyleProps {
+  src: string;
+}
+
+export const Root = styled.footer`
   background-color: #2a2a2a;
   width: 100vw;
   height: 163px;
@@ -42,6 +46,7 @@ export const ContentWrap = styled.div`
 export const InfoWrap = styled.div``;
 
 export const TitleButton = styled.button`
+  cursor: pointer;
   text-decoration-line: underline;
   line-height: 50px;
   line-height: 20px;
@@ -70,7 +75,6 @@ export const ChannelsWrap = styled.div`
 `;
 
 export const ChannelTitleText = styled.p`
-
   margin-bottom: 25px;
   line-height: 20px;
   font-family: 'SUIT', arial;
