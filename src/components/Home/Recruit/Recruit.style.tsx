@@ -67,7 +67,7 @@ export const PlainCircleText = styled.p`
   letter-spacing: -0.04em;
 
   font-family: 'SUIT', arial;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
 
   /* 모바일 뷰 */

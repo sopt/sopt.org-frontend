@@ -39,7 +39,7 @@ export const TextWrap = styled.div`
 
   @media (max-width: 1279px) {
     margin-top: 203px;
-    margin-left: 11px;
+    margin-left: 35px;
   }
 `;
 

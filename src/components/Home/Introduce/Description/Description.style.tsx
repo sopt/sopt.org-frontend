@@ -28,7 +28,7 @@ export const Description = styled.p`
 
   @media (max-width: 1279px) {
     margin-bottom: 80px;
-    padding: 0 16px;
-    font-size: 14px;
+    padding: 0 35px;
+    font-size: 13px;
   }
 `;
