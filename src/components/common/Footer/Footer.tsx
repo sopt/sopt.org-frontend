@@ -35,7 +35,7 @@ function Footer() {
         </S.InfoWrap>
         <S.ChannelsWrap>
           {isDesktop && <S.ChannelTitleText>SOPT 채널 바로가기</S.ChannelTitleText>}
-          <Channels />
+          <Channels isFooter={true} />
         </S.ChannelsWrap>
       </S.ContentWrap>
     </S.Root>

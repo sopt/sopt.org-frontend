@@ -23,14 +23,25 @@ export const Root = styled.div`
   @media (min-width: 1280px) {
     width: calc((100vw - 1280px) / 2 + 400px);
   }
+
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+    width: calc((100vw - 375px) / 2 + 250px);
+  }
 `;
 
 export const MenuWrap = styled.div`
   padding: 0 60px;
+  height: 100%;
 
   /* 데스크탑 뷰 */
   @media (min-width: 1280px) {
     width: 400px;
+  }
+
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+    padding: 0 30px;
   }
 `;
 
@@ -39,10 +50,19 @@ export const CloseButton = styled.button<CloseButtonProps>`
   top: 35px;
   right: -256px;
 
-  background: url(${(props: CloseButtonProps) => props.src});
+  background: url(${(props: CloseButtonProps) => props.src}) no-repeat;
 
   width: 24px;
   height: 24px;
+
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+
+    top: 47px;
+    right: -170px;
+    width: 48px;
+    height: 48px;
+  }
 `;
 
 export const ContentsWrap = styled.div`
@@ -54,12 +74,22 @@ export const ContentsWrap = styled.div`
   margin-bottom: 50px;
 
   height: calc(100vh - 200px);
+
+  /* 모바일 세로 짧은 기종 뷰 */
+  @media (max-height: 700px) {
+    margin-top: 50px;
+    margin-bottom: 0px;
+
+    height: calc(100vh - 150px);
+  }
 `;
 
 export const MenuTitlesWrap = styled.div`
   display: grid;
   grid-template-columns: repeat(1);
   row-gap: 20px;
+
+  padding-bottom: 30px;
 `;
 
 export const MenuTitle = styled.a<MenuTitleProps>`
@@ -76,6 +106,11 @@ export const MenuTitle = styled.a<MenuTitleProps>`
   font-family: 'SUIT', Arial;
   font-size: 20px;
   font-weight: 500;
+
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+    font-size: 16px;
+  }
 `;
 
 export const BottomWrap = styled.div``;
@@ -90,6 +125,11 @@ export const Rules = styled.a`
   font-family: 'SUIT', Arial;
   font-size: 16px;
   font-weight: 800;
+
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+    font-size: 15px;
+  }
 `;
 
 export const ChannelWrap = styled.div`
@@ -97,7 +137,6 @@ export const ChannelWrap = styled.div`
 `;
 
 export const ChannelTitle = styled.p`
-
   margin-bottom: 15px;
   line-height: 17px;
   letter-spacing: -0.04em;

@@ -7,7 +7,11 @@ import React from 'react';
 
 import * as S from './Channels.style';
 
-function Channels() {
+interface ChannelsProps {
+  isFooter?: boolean;
+}
+
+function Channels({ isFooter = false }: ChannelsProps) {
   const channelsList = [
     mailLogo.src,
     facebookLogo.src,
@@ -17,7 +21,7 @@ function Channels() {
   ];
 
   return (
-    <S.ChannelButtonsWrap>
+    <S.ChannelButtonsWrap isFooter={isFooter}>
       {channelsList.map((imgSrc) => (
         <S.ChannelButton key={imgSrc.id} src={imgSrc} />
       ))}
