@@ -16,10 +16,11 @@ function CollapseLi({ title, contents }: CollapseLiProps) {
 
   return (
     <S.Root>
-      <S.Section>
+      <S.Section onClick={handleClick}>
         <S.TItle>{title}</S.TItle>
-        <S.Button isOpened={isOpened} onClick={handleClick} />
+        <S.Button isOpened={isOpened} />
       </S.Section>
+      <S.Contents isOpened={isOpened}>{contents}</S.Contents>
     </S.Root>
   );
 }
