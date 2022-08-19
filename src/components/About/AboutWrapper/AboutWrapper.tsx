@@ -17,7 +17,7 @@ interface AboutTopProps {
 function AboutWrapper({ children, ...props }: AboutWrapperProps) {
   return (
     <S.Root {...props}>
-      <S.Wrap>{children}</S.Wrap>
+      <S.Wrap {...props}>{children}</S.Wrap>
     </S.Root>
   );
 }

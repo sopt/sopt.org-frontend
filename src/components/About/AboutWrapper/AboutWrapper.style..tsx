@@ -9,16 +9,16 @@ export const Root = styled.section<RootStyleProps>`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: calc(100vh - 163px);
+  height: calc(100vh - 326px);
   height: ${({ height }) => !height && '100vh'};
   scroll-snap-align: center;
 `;
 
-export const Wrap = styled.div`
+export const Wrap = styled.div<RootStyleProps>`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: ${({ height }) => (height ? '100px' : '200px')};
   width: 1040px;
 `;
 
