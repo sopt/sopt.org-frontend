@@ -36,9 +36,17 @@ export const CenterAligner = styled.div`
 `;
 
 export const Logo = styled.button<StyleProps>`
-  background: url(${(props) => props.src}) no-repeat;
+  background: url(${(props) => props.src}) center no-repeat;
+  background-size: 100% 100%;
+
   width: 125px;
   height: 41px;
+
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+    width: 97px;
+    height: 31px;
+  }
 `;
 
 export const HamburgerBar = styled.button<StyleProps>`
@@ -46,14 +54,17 @@ export const HamburgerBar = styled.button<StyleProps>`
   right: 0px;
   bottom: 10px;
 
-  background: url(${(props) => props.src}) no-repeat;
-  background-size: cover;
+  background: url(${(props) => props.src}) center no-repeat;
+  background-size: 100% 100%;
   width: 24px;
   height: 24px;
 
   /* 모바일 뷰 */
   @media (max-width: 1279px) {
     right: 10px;
-    bottom: 0px;
+    bottom: 10px;
+
+    width: 16px;
+    height: 16px;
   }
 `;

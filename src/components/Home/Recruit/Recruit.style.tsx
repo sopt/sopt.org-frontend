@@ -9,7 +9,7 @@ export const Root = styled.div`
   /* 데스크탑 뷰 */
   @media (min-width: 1280px) {
     height: calc(100vh - 163px); /* 163px은 푸터 */
-    scroll-snap-align: bottom;
+    scroll-snap-align: end;
   }
 `;
 
