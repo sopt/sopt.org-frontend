@@ -5,8 +5,6 @@ export const Root = styled.main`
   margin-bottom: 130px;
   width: 100%;
   max-width: 1192px;
-  /* height: 100vh;
-  overflow-y: scroll; */
   @media screen and (max-width: 1280px) {
     width: 92%;
   }
