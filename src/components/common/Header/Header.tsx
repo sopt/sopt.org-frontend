@@ -13,7 +13,9 @@ function Header() {
     <>
       <S.Header>
         <S.Wrap>
-          <S.Logo src={logoIcon.src} />
+          <S.CenterAligner>
+            <S.Logo src={logoIcon.src} />
+          </S.CenterAligner>
           <S.HamburgerBar
             src={menuBar.src}
             onClick={() => {

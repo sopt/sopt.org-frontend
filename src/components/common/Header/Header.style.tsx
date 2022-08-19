@@ -10,25 +10,50 @@ export const Header = styled.header`
   justify-content: center;
   z-index: 9;
   width: 100%;
+  height: 100px;
 `;
 
 export const Wrap = styled.div`
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+
   margin: 30px 60px;
   width: 1160px;
+
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+    width: 347px;
+  }
+`;
+
+export const CenterAligner = styled.div`
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const Logo = styled.button<StyleProps>`
   background: url(${(props) => props.src}) no-repeat;
-  background-size: cover;
   width: 125px;
   height: 41px;
 `;
 
 export const HamburgerBar = styled.button<StyleProps>`
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+
   background: url(${(props) => props.src}) no-repeat;
   background-size: cover;
   width: 24px;
   height: 24px;
+
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+    right: 10px;
+    bottom: 0px;
+  }
 `;

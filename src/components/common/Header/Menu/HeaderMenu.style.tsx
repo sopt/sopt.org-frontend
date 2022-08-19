@@ -57,7 +57,6 @@ export const CloseButton = styled.button<CloseButtonProps>`
 
   /* 모바일 뷰 */
   @media (max-width: 1279px) {
-
     top: 47px;
     right: -170px;
     width: 48px;
