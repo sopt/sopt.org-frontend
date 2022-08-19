@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import exp from 'constants';
 
 export const Root = styled.div``;
 
@@ -11,7 +10,6 @@ export const Year = styled.p`
 `;
 
 export const ImageWrap = styled.div`
-
   position: relative;
 
   margin-top: 10px;
@@ -25,7 +23,6 @@ export const ImageWrap = styled.div`
 `;
 
 export const Title = styled.h1`
-
   margin-top: 10px;
   line-height: 25px;
   font-family: 'SUIT', Arial;
@@ -34,7 +31,6 @@ export const Title = styled.h1`
 `;
 
 export const Description = styled.p`
-
   margin-top: 10px;
   line-height: 160%;
   font-family: 'SUIT', Arial;
@@ -43,7 +39,6 @@ export const Description = styled.p`
 `;
 
 export const Etc = styled.p`
-
   margin-top: 10px;
   line-height: 160%;
 

@@ -7,13 +7,18 @@ export const Root = styled.div`
 `;
 
 export const ImageWrap = styled.div`
-
   position: relative;
   width: 160px;
   height: 70px;
 
   & img {
     object-fit: cover;
+  }
+
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+    width: 121px;
+    height: 52px;
   }
 `;
 

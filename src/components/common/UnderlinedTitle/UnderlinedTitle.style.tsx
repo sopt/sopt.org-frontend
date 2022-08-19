@@ -16,6 +16,8 @@ export const Root = styled.h1`
   @media (max-width: 1279px) {
     border-bottom: 6px solid ${({ theme }) => theme.colors.mainColor};
     padding-bottom: 5px;
+
+    line-height: 31px;
     font-size: 25px;
   }
 `;

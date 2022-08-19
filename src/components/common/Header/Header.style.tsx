@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+
 interface StyleProps {
   src: string;
 }
@@ -9,6 +10,7 @@ export const Header = styled.header`
   justify-content: center;
   z-index: 9;
   width: 100%;
+  //background: #181818;
 `;
 
 export const Wrap = styled.div`
