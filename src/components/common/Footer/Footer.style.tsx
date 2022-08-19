@@ -22,6 +22,7 @@ export const ContentWrap = styled.div`
 export const InfoWrap = styled.div``;
 
 export const TitleButton = styled.button`
+  cursor: pointer;
   text-decoration-line: underline;
   line-height: 50px;
   line-height: 20px;
