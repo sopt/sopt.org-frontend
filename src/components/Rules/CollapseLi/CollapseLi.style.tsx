@@ -28,6 +28,9 @@ export const TItle = styled.h3`
   font-size: 24px;
   font-weight: 700;
   font-style: normal;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 export const Button = styled.button<ButtonStyleProps>`
@@ -66,9 +69,15 @@ export const Contents = styled.div<ButtonStyleProps>`
       ? css`
           transition: max-height 0.2s ease-in;
           max-height: 2000px;
+          @media screen and (max-width: 1280px) {
+            max-height: 5000px;
+          }
         `
       : css`
           transition: max-height 0.15s ease-out;
           max-height: 0;
         `}
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
