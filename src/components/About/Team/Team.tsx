@@ -6,6 +6,7 @@ import Image from 'next/image';
 
 import AboutWrapper from '../AboutWrapper';
 import * as S from './Team.style';
+import TeamImage from './TeamImage';
 function Team() {
   return (
     <AboutWrapper height={'calc(100vh-163px)'}>
@@ -17,9 +18,7 @@ function Team() {
             <S.Contents>{ABOUT_INFO.TEAM.contents}</S.Contents>
           </>
         }
-        rightProps={
-          <Image src={StudyNetworkingImg.src} width={475} height={250} alt="스터디 네트워킹" />
-        }
+        rightProps={<TeamImage />}
       />
     </AboutWrapper>
   );
