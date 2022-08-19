@@ -7,7 +7,7 @@ import * as S from './Projects.style';
 function Projects() {
   return (
     <S.Root>
-      <UnderlinedTitle>PROJECT with SOPT</UnderlinedTitle>
+      <UnderlinedTitle>{'PROJECT\nwith SOPT'}</UnderlinedTitle>
       <S.Description>
         다양한 기업 및 단체에서 SOPT와 협력 프로젝트를 진행하고 있습니다.
       </S.Description>

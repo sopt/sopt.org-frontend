@@ -7,6 +7,8 @@ export const Root = styled.h1`
   width: max-content;
   line-height: 44px;
 
+  white-space: pre-line;
+
   font-family: 'SUIT', arial;
   font-size: 35px;
   font-weight: 800;
