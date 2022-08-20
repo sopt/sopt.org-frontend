@@ -11,7 +11,7 @@ function AppjamStep() {
     <S.Root>
       {APPJAM_STEP.map((item, idx) => {
         return item.isGradient ? (
-          <S.StepWrap>
+          <S.StepWrap key={item.title}>
             <Fade left delay={item.delay}>
               <S.GradientCircleText>
                 <p>{item.title}</p>
@@ -24,7 +24,7 @@ function AppjamStep() {
             )}
           </S.StepWrap>
         ) : (
-          <S.StepWrap>
+          <S.StepWrap key={item.title}>
             <Fade left delay={item.delay}>
               <S.PlainCircleText>
                 <p>{item.title}</p>
