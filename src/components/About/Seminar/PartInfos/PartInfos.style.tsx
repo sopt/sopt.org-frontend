@@ -9,7 +9,7 @@ export const Root = styled.ul`
 
   /* 모바일 뷰 */
   @media (max-width: 1279px) {
-    gap: 26px;
+    gap: 10px;
     width: 305px;
     overflow: auto;
   }
