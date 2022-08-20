@@ -12,8 +12,8 @@ export const Root = styled.section`
 `;
 
 export const Title = styled.h2`
-  margin-top: 44px;
-  margin-bottom: 15px;
+  margin-top: 50px;
+  margin-bottom: 35px;
   padding-left: 16px;
   width: 870px;
 `;

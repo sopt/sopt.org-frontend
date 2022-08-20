@@ -9,16 +9,17 @@ export const Root = styled.section<RootStyleProps>`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: calc(100vh - 326px);
+  height: calc(100vh - 163px);
   height: ${({ height }) => !height && '100vh'};
-  scroll-snap-align: center;
+  scroll-snap-align: ${({ height }) => (height ? 'start' : 'center')};
 `;
 
 export const Wrap = styled.div<RootStyleProps>`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: ${({ height }) => (height ? '100px' : '200px')};
+  margin-top: 20%;
+  /* margin-top: ${({ height }) => (height ? '100px' : '200px')}; */
   width: 1040px;
 `;
 

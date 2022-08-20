@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import Sopt404 from '@src/assets/images/sopt_404.png';
+import Header from '@src/components/common/Header';
 import RoundButton from '@src/components/common/RoundButton';
 import theme from '@src/styles/theme';
 import Image from 'next/image';
@@ -14,13 +15,16 @@ function projects() {
   };
 
   return (
-    <Styled.Root>
-      <Image src={Sopt404.src} width={296} height={78} alt="솝트" />
-      <span>앗 아직 준비 중인 기능이에요!</span>
-      <RoundButton isReverse={true} onClick={handleClick}>
+    <>
+      <Header />
+      <Styled.Root>
+        <Image src={Sopt404.src} width={296} height={78} alt="솝트" />
+        <span>앗 아직 준비 중인 기능이에요!</span>
+        {/* <RoundButton isReverse={true} onClick={handleClick}>
         홈으로 가기
-      </RoundButton>
-    </Styled.Root>
+      </RoundButton> */}
+      </Styled.Root>
+    </>
   );
 }
 

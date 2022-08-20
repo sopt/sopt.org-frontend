@@ -116,6 +116,7 @@ export const MenuTitle = styled.a<MenuTitleProps>`
 export const BottomWrap = styled.div``;
 
 export const Rules = styled.a`
+  cursor: pointer;
   text-decoration-line: underline;
   line-height: 20px;
 
