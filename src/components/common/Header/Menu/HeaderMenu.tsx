@@ -63,8 +63,10 @@ function HeaderMenu({ handleCloseClick }: HeaderMenuProps) {
               협력사
             </S.MenuTitle>
           </S.MenuTitlesWrap>
-          <S.BottomWrap id="/rules">
-            <S.Rules>SOPT 회칙</S.Rules>
+          <S.BottomWrap>
+            <S.Rules id="/rules" onClick={handleClick}>
+              SOPT 회칙
+            </S.Rules>
             <S.ChannelWrap>
               <S.ChannelTitle>SOPT 채널 바로가기</S.ChannelTitle>
               <Channels />
