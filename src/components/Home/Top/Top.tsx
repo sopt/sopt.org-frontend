@@ -30,7 +30,13 @@ function Top() {
         </S.TextWrap>
         <S.ScrollWrap>
           <S.ScrollText>Scroll</S.ScrollText>
-          <Image src={ArrowIcon} width="20px" alt="아래 화살표" />
+          <Image
+            src={ArrowIcon}
+            width="20px"
+            alt="아래 화살표"
+            blurDataURL={ArrowIcon}
+            placeholder="blur"
+          />
         </S.ScrollWrap>
       </S.Wrap>
     </S.Root>
