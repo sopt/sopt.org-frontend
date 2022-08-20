@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://3.39.111.29:3000';
+const BASE_URL = 'https://api.sopt.org';
 
 const client = axios.create({
   baseURL: BASE_URL,
@@ -9,6 +9,12 @@ const client = axios.create({
 
 export const getMainLogo = async () => {
   const data = await client.get('/logo');
+
+  return data?.data;
+};
+
+export const getPartnersData = async () => {
+  const data = await client.get('/history/partners');
 
   return data?.data;
 };

@@ -25,7 +25,7 @@ function CommonError({ error, reset }: CommonErrorProps) {
     }
   }, []);
 
-  return <ToastContainer pauseOnHover />;
+  return <ToastContainer />;
 }
 
 export default CommonError;
