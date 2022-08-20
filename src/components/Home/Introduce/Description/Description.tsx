@@ -1,11 +1,17 @@
 import RoundButton from '@src/components/common/RoundButton';
 import UnderlinedTitle from '@src/components/common/UnderlinedTitle';
+import { useRouter } from 'next/router';
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
 import * as S from './Description.style';
 
 function Description() {
+  const router = useRouter();
+  const handleClick = () => {
+    router.push('/about');
+  };
+
   return (
     <S.Wrap>
       <Fade top>
@@ -28,7 +34,7 @@ function Description() {
         </S.Description>
       </Fade>
       <Fade delay={1000}>
-        <RoundButton>SOPT 활동 자세히 보기</RoundButton>
+        <RoundButton onClick={handleClick}>SOPT 활동 자세히 보기</RoundButton>
       </Fade>
     </S.Wrap>
   );

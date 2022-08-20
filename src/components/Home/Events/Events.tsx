@@ -3,6 +3,7 @@ import SopkathonImage from '@src/assets/images/Sopkathon.svg';
 import SoptTermImage from '@src/assets/images/Sopt-Term.svg';
 import { appjamInfo, sopkathonInfo, soptTermInfo } from '@src/assets/replaceMe/statistics';
 import RoundButton from '@src/components/common/RoundButton';
+import { useRouter } from 'next/router';
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
@@ -11,6 +12,11 @@ import Event from './Event/Event';
 import * as S from './Events.style';
 
 function Events() {
+  const router = useRouter();
+  const handleClick = () => {
+    router.push('/projects');
+  };
+
   return (
     <S.Root>
       <S.Wrap>
@@ -41,7 +47,7 @@ function Events() {
           </Fade>
         </S.EventWrap>
         <Fade delay={1000}>
-          <RoundButton>SOPT 서비스 구경하기</RoundButton>
+          <RoundButton onClick={handleClick}>SOPT 서비스 구경하기</RoundButton>
         </Fade>
       </S.Wrap>
       <SoptMarquee />
