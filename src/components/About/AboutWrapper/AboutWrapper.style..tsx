@@ -25,10 +25,20 @@ export const Wrap = styled.div<RootStyleProps>`
   margin-top: 20%;
   /* margin-top: ${({ height }) => (height ? '100px' : '200px')}; */
   width: 1040px;
+
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+    width: 305px;
+  }
 `;
 
 export const ContentWrap = styled.div`
   width: 1040px;
+
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+    width: 305px;
+  }
 `;
 
 export const TopBox = styled.div`
@@ -39,6 +49,9 @@ export const TopBox = styled.div`
   /* 모바일 뷰 */
   @media (max-width: 1279px) {
     flex-direction: column;
+    gap: 30px;
+    align-items: start;
+    //justify-content: flex-start;
   }
 `;
 export const InfoText = styled.article`

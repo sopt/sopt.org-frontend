@@ -2,12 +2,17 @@ import SeminarImg from '@src/assets/images/SeminarImg.svg';
 import UnderlinedTitle from '@src/components/common/UnderlinedTitle';
 import { ABOUT_INFO } from '@src/constants/about';
 import Image from 'next/image';
+import { useMediaQuery } from 'react-responsive';
 
 import AboutWrapper from '../AboutWrapper';
 import PartInfos from './PartInfos';
 import * as S from './Seminar.style';
 
 function Seminar() {
+  const isDesktop = useMediaQuery({
+    query: '(min-width: 1280px)',
+  });
+
   return (
     <AboutWrapper>
       <AboutWrapper.Top
@@ -21,8 +26,8 @@ function Seminar() {
         rightProps={
           <Image
             src={SeminarImg}
-            width={280}
-            height={300}
+            width={isDesktop ? 280 : 229}
+            height={isDesktop ? 300 : 249}
             alt="service - design, plan, server, web, ios, android"
           />
         }
