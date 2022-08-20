@@ -8,6 +8,7 @@ import AboutWrapper from '../AboutWrapper';
 import * as S from './Appjam.style';
 import AppjamBox from './AppjamBox';
 import AppjamStep from './AppjamStep';
+
 function Appjam() {
   return (
     <S.AppjamWrapper>
@@ -16,13 +17,13 @@ function Appjam() {
       </S.ImageWrapper>
       <AboutWrapper>
         <AboutWrapper.Top
-          leftProps={
+          leftTitleProps={
             <>
               <S.Description>{ABOUT_INFO.APPJAM.description}</S.Description>
               <UnderlinedTitle fontSize="40px">{ABOUT_INFO.APPJAM.title}</UnderlinedTitle>
-              <S.Contents>{ABOUT_INFO.APPJAM.contents}</S.Contents>
             </>
           }
+          leftDescriptionProps={<S.Contents>{ABOUT_INFO.APPJAM.contents}</S.Contents>}
           rightProps={<AppjamBox />}
         />
         <AboutWrapper.Content>

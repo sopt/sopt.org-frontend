@@ -7,21 +7,24 @@ import Image from 'next/image';
 import AboutWrapper from '../AboutWrapper';
 import * as S from './SoptTerm.style';
 import SoptTermImage from './SoptTermImage';
+
 function SoptTerm() {
   return (
     <AboutWrapper>
       <AboutWrapper.Top
-        leftProps={
+        leftTitleProps={
           <>
             <S.Description>{ABOUT_INFO.SOPTTERM.description}</S.Description>
             <UnderlinedTitle fontSize="40px">{ABOUT_INFO.SOPTTERM.title}</UnderlinedTitle>
-            <S.Contents>
-              {ABOUT_INFO.SOPTTERM.contents}
-              <br />
-              <br />
-              <strong>#한기수이상_수료자만_가능</strong>
-            </S.Contents>
           </>
+        }
+        leftDescriptionProps={
+          <S.Contents>
+            {ABOUT_INFO.SOPTTERM.contents}
+            <br />
+            <br />
+            <strong>#한기수이상_수료자만_가능</strong>
+          </S.Contents>
         }
         rightProps={<SoptTermImage />}
       />

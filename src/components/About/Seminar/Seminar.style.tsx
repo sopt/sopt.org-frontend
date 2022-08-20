@@ -6,8 +6,11 @@ export const Root = styled.section`
   align-items: center;
   justify-content: space-between;
 
-  height: 100vh;
-  scroll-snap-align: center;
+  /* 데스크탑 뷰 */
+  @media (min-width: 1280px) {
+    height: 100vh;
+    scroll-snap-align: center;
+  }
 `;
 
 export const Wrap = styled.div`
@@ -38,6 +41,11 @@ export const Description = styled.div`
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
+
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+    font-size: 14px;
+  }
 `;
 export const Contents = styled.div`
   line-height: 180%;

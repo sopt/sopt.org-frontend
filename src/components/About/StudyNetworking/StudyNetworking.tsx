@@ -6,21 +6,24 @@ import Image from 'next/image';
 
 import AboutWrapper from '../AboutWrapper';
 import * as S from './StudyNetworking.style';
+
 function StudyNetworking() {
   return (
     <AboutWrapper>
       <AboutWrapper.Top
-        leftProps={
+        leftTitleProps={
           <>
             <S.Description>{ABOUT_INFO.STUDY_NETWORKUNG.description}</S.Description>
             <UnderlinedTitle fontSize="40px">{ABOUT_INFO.STUDY_NETWORKUNG.title}</UnderlinedTitle>
-            <S.Contents>
-              {ABOUT_INFO.STUDY_NETWORKUNG.contents}
-              <br />
-              <br />
-              <strong>#누구나_참여하고_친해지는</strong>
-            </S.Contents>
           </>
+        }
+        leftDescriptionProps={
+          <S.Contents>
+            {ABOUT_INFO.STUDY_NETWORKUNG.contents}
+            <br />
+            <br />
+            <strong>#누구나_참여하고_친해지는</strong>
+          </S.Contents>
         }
         rightProps={
           <Image src={StudyNetworkingImg.src} width={475} height={250} alt="스터디 네트워킹" />

@@ -11,13 +11,13 @@ function Seminar() {
   return (
     <AboutWrapper>
       <AboutWrapper.Top
-        leftProps={
+        leftTitleProps={
           <>
             <S.Description>{ABOUT_INFO.SEMINAR.description}</S.Description>
             <UnderlinedTitle fontSize="40px">{ABOUT_INFO.SEMINAR.title}</UnderlinedTitle>
-            <S.Contents>{ABOUT_INFO.SEMINAR.contents}</S.Contents>
           </>
         }
+        leftDescriptionProps={<S.Contents>{ABOUT_INFO.SEMINAR.contents}</S.Contents>}
         rightProps={
           <Image
             src={SeminarImg}
