@@ -20,8 +20,8 @@ function Event({ titleKorean, titleEnglish, imageSrc, eventDetails }: EventProps
       </S.TitleWrap>
       <Image
         src={imageSrc}
-        width="260px"
-        height="195px"
+        width={260}
+        height={195}
         alt="행사 이미지"
         blurDataURL={imageSrc}
         placeholder="blur"

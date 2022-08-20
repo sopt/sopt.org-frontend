@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import bgImg from '@src/assets/images/bg-img.svg';
+import bgImg from '@src/assets/replaceMe/MainImg/img_top-banner.png';
 
 export const Root = styled.div`
   display: flex;
@@ -11,6 +11,7 @@ export const Root = styled.div`
       #181818 99.41%
     ),
     url(${bgImg.src});
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
