@@ -22,7 +22,8 @@ export const ChannelButtonsWrap = styled.div<WrapProps>`
 export const ChannelButton = styled.button<StyleProps>`
   background-image: url(${(props: StyleProps) => props.src});
   background-size: cover;
-  width: 30px;
+  cursor: pointer;
 
+  width: 30px;
   height: 30px;
 `;

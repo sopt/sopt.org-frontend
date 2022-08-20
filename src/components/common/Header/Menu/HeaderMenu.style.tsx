@@ -51,6 +51,7 @@ export const CloseButton = styled.button<CloseButtonProps>`
   right: -256px;
 
   background: url(${(props: CloseButtonProps) => props.src}) no-repeat;
+  cursor: pointer;
 
   width: 24px;
   height: 24px;
