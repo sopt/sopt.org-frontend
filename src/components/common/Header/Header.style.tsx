@@ -38,6 +38,7 @@ export const CenterAligner = styled.div`
 export const Logo = styled.button<StyleProps>`
   background: url(${(props) => props.src}) center no-repeat;
   background-size: 100% 100%;
+  cursor: pointer;
 
   width: 125px;
   height: 41px;
