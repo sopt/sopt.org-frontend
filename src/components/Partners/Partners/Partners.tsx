@@ -16,6 +16,7 @@ const Partners = () => {
     <ErrorBoundary
       renderFallback={({ error, reset }) => <CommonError error={error} reset={reset} />}
     >
+      {/*  TODO skeleton 추가 */}
       <SSRSafeSuspense fallback={<ClipLoader size={50} color={'#ffffff'} />}>
         <Resolved />
       </SSRSafeSuspense>
