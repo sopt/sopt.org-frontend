@@ -12,3 +12,5 @@ export const DotImg = styled.div`
   display: flex;
   height: 100%;
 `;
+
+export const PartWrapper = styled.div``;

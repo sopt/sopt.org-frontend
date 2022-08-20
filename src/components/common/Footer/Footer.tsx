@@ -37,7 +37,7 @@ function Footer() {
           <S.ChannelTitleText>SOPT 채널 바로가기</S.ChannelTitleText>
           <S.ChannelButtonsWrap>
             {channelsList.map((imgSrc) => (
-              <S.ChannelButton key={imgSrc.id} src={imgSrc} />
+              <S.ChannelButton key={imgSrc} src={imgSrc} />
             ))}
           </S.ChannelButtonsWrap>
         </S.ChannelsWrap>

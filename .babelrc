@@ -25,7 +25,8 @@
         "extensions": [".js", ".jsx", ".tsx", ".ts"]
       }
     ],
-    "@emotion/babel-plugin"
+    "@emotion/babel-plugin",
+    "@babel/plugin-transform-runtime"
   ],
   "env": { "production": { "plugins": ["@emotion"] } }
 }
