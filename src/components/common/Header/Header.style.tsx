@@ -16,7 +16,7 @@ export const Header = styled.header`
 export const Wrap = styled.div`
   position: relative;
 
-  margin: 30px 60px;
+  margin: 30px 0px;
   width: 1160px;
 
   /* 모바일 뷰 */
