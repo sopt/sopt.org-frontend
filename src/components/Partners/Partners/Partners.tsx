@@ -11,6 +11,12 @@ import { ClipLoader } from 'react-spinners';
 
 import * as S from './Partners.style';
 
+interface dataType {
+  id: string;
+  image: string;
+  name: string;
+}
+
 const Partners = () => {
   return (
     <ErrorBoundary
@@ -38,7 +44,7 @@ function Resolved() {
       <UnderlinedTitle>PARTNERS</UnderlinedTitle>
       <S.Description>다양한 기업 및 단체에서 SOPT를 위해 후원하고 있습니다.</S.Description>
       <S.PartnerWrap>
-        {data?.data?.partners?.map((item) => (
+        {data?.data?.partners?.map((item: dataType) => (
           <PartnerCard key={item.id} imageSrc={item.image} name={item.name} />
         ))}
       </S.PartnerWrap>

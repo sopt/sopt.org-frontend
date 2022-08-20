@@ -10,6 +10,15 @@ import { ClipLoader } from 'react-spinners';
 
 import * as S from './Projects.style';
 
+interface dataType {
+  id: string;
+  posterImage: string;
+  year: number;
+  title: string;
+  content: string;
+  subContent: string;
+}
+
 const Projects = () => {
   return (
     <ErrorBoundary
@@ -35,7 +44,7 @@ function Resolved() {
         다양한 기업 및 단체에서 SOPT와 협력 프로젝트를 진행하고 있습니다.
       </S.Description>
       <S.ProjectWrap>
-        {data?.data?.projects?.map((item) => (
+        {data?.data?.projects?.map((item: dataType) => (
           <ProjectCard
             key={item.id}
             imageSrc={item.posterImage}
