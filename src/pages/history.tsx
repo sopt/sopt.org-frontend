@@ -18,7 +18,14 @@ function history() {
     <>
       <Header />
       <Styled.Root>
-        <Image src={Sopt404.src} width={296} height={78} alt="솝트" />
+        <Image
+          src={Sopt404.src}
+          width={296}
+          height={78}
+          alt="솝트"
+          blurDataURL={Sopt404.src}
+          placeholder="blur"
+        />
         <span>앗 아직 준비 중인 기능이에요!</span>
         {/* <RoundButton onClick={handleClick} isReverse={true}>
         홈으로 가기

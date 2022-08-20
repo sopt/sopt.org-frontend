@@ -24,6 +24,8 @@ function Seminar() {
             width={280}
             height={300}
             alt="service - design, plan, server, web, ios, android"
+            blurDataURL={SeminarImg}
+            placeholder="blur"
           />
         }
       />

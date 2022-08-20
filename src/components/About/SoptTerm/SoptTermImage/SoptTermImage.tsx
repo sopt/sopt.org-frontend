@@ -17,13 +17,34 @@ function SoptTermImage() {
   return (
     <S.Root>
       <S.ImageWrapper>
-        <Image src={SoptTermImage1} width={200} height={200} alt="솝커톤" />
-        <Image src={SoptTermImage2} width={300} height={200} alt="솝커톤" />
+        <Image
+          src={SoptTermImage1}
+          width={200}
+          height={200}
+          alt="솝커톤"
+          blurDataURL={SoptTermImage1.src}
+          placeholder="blur"
+        />
+        <Image
+          src={SoptTermImage2}
+          width={300}
+          height={200}
+          alt="솝커톤"
+          blurDataURL={SoptTermImage2.src}
+          placeholder="blur"
+        />
       </S.ImageWrapper>
       <RoundButton isReverse={true}>
         <S.ButtonContents onClick={handleClick}>
           솝텀 프로젝트 보기
-          <Image src={RightArrow} width={50} height={5} alt="오른쪽 화살표" />
+          <Image
+            src={RightArrow}
+            width={50}
+            height={5}
+            alt="오른쪽 화살표"
+            blurDataURL={RightArrow.src}
+            placeholder="blur"
+          />
         </S.ButtonContents>
       </RoundButton>
     </S.Root>

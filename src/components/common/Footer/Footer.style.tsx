@@ -16,8 +16,9 @@ export const Root = styled.footer`
 
   /* 모바일 뷰 */
   @media (max-width: 1279px) {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* margin-right: 8%; */
     height: 192px;
   }
 `;
@@ -38,7 +39,8 @@ export const ContentWrap = styled.div`
     justify-content: start;
 
     padding-top: 30px;
-    padding-left: 9px;
+    /* padding-left: 9px; */
+    padding-left: 8%;
     width: 327px;
   }
 `;

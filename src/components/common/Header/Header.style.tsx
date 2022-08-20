@@ -19,10 +19,14 @@ export const Wrap = styled.div`
   margin: 30px 0px;
   width: 1160px;
 
-  /* 모바일 뷰 */
+  /* 태블릿 뷰 */
   @media (max-width: 1279px) {
-    width: 347px;
+    width: 90%;
   }
+  /* 모바일 뷰 */
+  /* @media (max-width: 767px) {
+    width: 347px;
+  } */
 `;
 
 export const CenterAligner = styled.div`

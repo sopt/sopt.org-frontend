@@ -11,7 +11,13 @@ function PartnerCard({ imageSrc, name }: PartnerCardProps) {
   return (
     <S.Root>
       <S.ImageWrap>
-        <Image layout="fill" src={imageSrc} alt="협업 프로젝트 사진" />
+        <Image
+          layout="fill"
+          src={imageSrc}
+          alt="협업 프로젝트 사진"
+          blurDataURL={imageSrc}
+          placeholder="blur"
+        />
       </S.ImageWrap>
       <S.Name>{name}</S.Name>
     </S.Root>

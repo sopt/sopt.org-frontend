@@ -6,6 +6,9 @@ export const Wrap = styled.div`
   align-items: center;
 
   padding-top: 120px;
+  .main__logo {
+    border-radius: 5px;
+  }
 
   @media (min-width: 1280px) {
     padding-top: 100px;
