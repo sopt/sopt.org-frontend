@@ -52,6 +52,7 @@ specifiers:
   react-reveal: ^1.2.2
   react-spinners: ^0.13.4
   react-test-renderer: ^18.2.0
+  react-toastify: ^9.0.8
   stylelint: ^14.8.5
   stylelint-config-concentric-order: ^5.0.0
   stylelint-config-prettier: ^9.0.3
@@ -76,6 +77,7 @@ dependencies:
   react-reveal: 1.2.2_react@18.1.0
   react-spinners: 0.13.4_ef5jwxihqo6n7gxfmzogljlgcm
   react-test-renderer: 18.2.0_react@18.1.0
+  react-toastify: 9.0.8_ef5jwxihqo6n7gxfmzogljlgcm
 
 devDependencies:
   '@babel/core': 7.18.10
@@ -2941,6 +2943,11 @@ packages:
     dependencies:
       is-regexp: 2.1.0
     dev: true
+
+  /clsx/1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
+    dev: false
 
   /co/4.6.0:
     resolution: {integrity: sha512-QVb0dM5HvG+uaxitm8wONl7jltx8dqhfU33DcqtOZcLSVIKSDDLDi7+0LbAKiyI8hD9u42m2YxXSkMGWThaecQ==}
@@ -6097,6 +6104,17 @@ packages:
       react-is: 18.2.0
       react-shallow-renderer: 16.15.0_react@18.1.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-toastify/9.0.8_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha512-EwM+teWt49HSHx+67qI08yLAW1zAsBxCXLCsUfxHYv1W7/R3ZLhrqKalh7j+kjgPna1h5LQMSMwns4tB4ww2yQ==}
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+    dependencies:
+      clsx: 1.2.1
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
     dev: false
 
   /react/18.1.0:

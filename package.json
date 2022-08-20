@@ -27,7 +27,8 @@
     "react-responsive": "9.0.0-beta.10",
     "react-reveal": "^1.2.2",
     "react-spinners": "^0.13.4",
-    "react-test-renderer": "^18.2.0"
+    "react-test-renderer": "^18.2.0",
+    "react-toastify": "^9.0.8"
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",

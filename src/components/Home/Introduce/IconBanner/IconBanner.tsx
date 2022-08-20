@@ -1,4 +1,5 @@
 import Logo from '@src/assets/replaceMe/branding/symbol(1).svg';
+import CommonError from '@src/components/common/CommonError';
 import ErrorBoundary from '@src/components/common/ErrorBoundary';
 import SSRSafeSuspense from '@src/components/common/SSRSafeSuspense';
 import { getMainLogo } from '@src/lib/api';
@@ -13,9 +14,13 @@ import { ClipLoader } from 'react-spinners';
 import * as S from './IconBanner.style';
 const IconBanner = () => {
   return (
-    <SSRSafeSuspense fallback={<ClipLoader size={150} />}>
-      <Resolved />
-    </SSRSafeSuspense>
+    <ErrorBoundary
+      renderFallback={({ error, reset }) => <CommonError error={error} reset={reset} />}
+    >
+      <SSRSafeSuspense fallback={<ClipLoader size={50} color={'#ffffff'} />}>
+        <Resolved />
+      </SSRSafeSuspense>
+    </ErrorBoundary>
   );
 };
 
