@@ -1,12 +1,18 @@
 import Arrow from '@src/assets/icons/icArrowDown.svg';
 import RoundButton from '@src/components/common/RoundButton';
 import UnderlinedTitle from '@src/components/common/UnderlinedTitle';
+import { useRouter } from 'next/router';
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
 import * as S from './Recruit.style';
 
 function Recruit() {
+  const router = useRouter();
+  const handleClick = () => {
+    router.push('/recruit');
+  };
+
   return (
     <S.Root>
       <S.Wrap>
@@ -45,7 +51,9 @@ function Recruit() {
               </S.Description>
             </Fade>
             <Fade delay={1500}>
-              <RoundButton isReverse={true}>SOPT 지원하기</RoundButton>
+              <RoundButton isReverse={true} onClick={handleClick}>
+                SOPT 지원하기
+              </RoundButton>
             </Fade>
           </S.TextWrap>
         </S.ContentWrap>

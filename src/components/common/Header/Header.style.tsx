@@ -16,7 +16,7 @@ export const Header = styled.header`
 export const Wrap = styled.div`
   position: relative;
 
-  margin: 30px 60px;
+  margin: 30px 0px;
   width: 1160px;
 
   /* 모바일 뷰 */
@@ -38,6 +38,7 @@ export const CenterAligner = styled.div`
 export const Logo = styled.button<StyleProps>`
   background: url(${(props) => props.src}) center no-repeat;
   background-size: 100% 100%;
+  cursor: pointer;
 
   width: 125px;
   height: 41px;

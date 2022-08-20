@@ -7,12 +7,14 @@ import SoptTerm from '@src/components/About/SoptTerm';
 import StudyNetworking from '@src/components/About/StudyNetworking';
 import Team from '@src/components/About/Team';
 import Footer from '@src/components/common/Footer';
+import Header from '@src/components/common/Header';
 import React from 'react';
 
 function about() {
   return (
     <>
       <AboutHead />
+      <Header />
       <Styled.Main>
         <Seminar />
         <Appjam />

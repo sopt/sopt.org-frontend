@@ -3,11 +3,17 @@ import SoptTermImage1 from '@src/assets/images/sopterm1.png';
 import SoptTermImage2 from '@src/assets/images/sopterm2.png';
 import RoundButton from '@src/components/common/RoundButton';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import React from 'react';
 
 import * as S from './SoptTermImage.style';
 
 function SoptTermImage() {
+  const router = useRouter();
+  const handleClick = () => {
+    router.push('/projects');
+  };
+
   return (
     <S.Root>
       <S.ImageWrapper>
@@ -15,7 +21,7 @@ function SoptTermImage() {
         <Image src={SoptTermImage2} width={300} height={200} alt="솝커톤" />
       </S.ImageWrapper>
       <RoundButton isReverse={true}>
-        <S.ButtonContents>
+        <S.ButtonContents onClick={handleClick}>
           솝텀 프로젝트 보기
           <Image src={RightArrow} width={50} height={5} alt="오른쪽 화살표" />
         </S.ButtonContents>

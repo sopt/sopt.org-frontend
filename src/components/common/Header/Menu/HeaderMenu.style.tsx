@@ -93,6 +93,7 @@ export const MenuTitlesWrap = styled.div`
 
 export const MenuTitle = styled.a<MenuTitleProps>`
   border-bottom: ${(props: MenuTitleProps) => props.isSelected && '3px solid #8040FF'};
+  cursor: pointer;
   padding-bottom: 4px;
 
   width: max-content;
