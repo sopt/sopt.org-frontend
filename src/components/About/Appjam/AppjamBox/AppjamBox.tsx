@@ -24,7 +24,14 @@ function AppjamBox() {
     <S.AppjamBox>
       <S.AppjamInfoWrapper>
         <h2>{APPJAM_INFO.RELEASE.EN}</h2>
-        <Image src={DotImg} width={25} height={5} alt="split dot" />
+        <Image
+          src={DotImg}
+          width={25}
+          height={5}
+          alt="split dot"
+          blurDataURL={DotImg}
+          placeholder="blur"
+        />
         <div className="top__info">
           <h2>{APPJAM_INFO.RELEASE.KO}</h2>
           <h2>{APPJAM_INFO.RELEASE.COUNT}</h2>
@@ -41,6 +48,8 @@ function AppjamBox() {
           tabIndex={0}
           id="playstore"
           onClick={handleClick}
+          blurDataURL={GooglePlayStoreBtn}
+          placeholder="blur"
         />
         <Image
           src={AppStoreBtn}
@@ -51,11 +60,20 @@ function AppjamBox() {
           tabIndex={0}
           id="appstore"
           onClick={handleClick}
+          blurDataURL={AppStoreBtn}
+          placeholder="blur"
         />
       </S.DownloadBtnWrapper>
       <S.AppjamInfoWrapper>
         <h2>{APPJAM_INFO.FOUNDATION.EN}</h2>
-        <Image src={DotImg} width={25} height={5} alt="split dot" />
+        <Image
+          src={DotImg}
+          width={25}
+          height={5}
+          alt="split dot"
+          blurDataURL={DotImg}
+          placeholder="blur"
+        />
         <div className="bottom__info">
           <h2>{APPJAM_INFO.FOUNDATION.KO}</h2>
           <h2>{APPJAM_INFO.FOUNDATION.COUNT}</h2>

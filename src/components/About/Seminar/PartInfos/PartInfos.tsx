@@ -34,6 +34,8 @@ function PartInfos() {
                   width={isDesktop ? 50 : 30}
                   height={isDesktop ? 10 : 6}
                   alt="split dot"
+                  blurDataURL={DotImg}
+                  placeholder="blur"
                 />
               )}
             </S.DotImg>

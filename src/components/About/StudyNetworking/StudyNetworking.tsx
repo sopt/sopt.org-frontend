@@ -26,7 +26,14 @@ function StudyNetworking() {
           </S.Contents>
         }
         rightProps={
-          <Image src={StudyNetworkingImg.src} width={475} height={250} alt="스터디 네트워킹" />
+          <Image
+            src={StudyNetworkingImg.src}
+            width={475}
+            height={250}
+            alt="스터디 네트워킹"
+            blurDataURL={StudyNetworkingImg.src}
+            placeholder="blur"
+          />
         }
       />
       <AboutWrapper.Content>
@@ -39,6 +46,8 @@ function StudyNetworking() {
                 height={130}
                 alt={`네트워킹 ${item.id}`}
                 key={item.id}
+                blurDataURL={item.image}
+                placeholder="blur"
               />
             );
           })}

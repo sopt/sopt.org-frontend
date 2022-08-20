@@ -31,7 +31,14 @@ function SoptTerm() {
       <AboutWrapper.Content>
         <S.ImageWrapper>
           <S.Filter />
-          <Image src={SoptTermServices.src} width={1020} height={165} alt="솝텀 서비스들" />
+          <Image
+            src={SoptTermServices.src}
+            width={1020}
+            height={165}
+            alt="솝텀 서비스들"
+            blurDataURL={SoptTermServices.src}
+            placeholder="blur"
+          />
         </S.ImageWrapper>
       </AboutWrapper.Content>
     </AboutWrapper>

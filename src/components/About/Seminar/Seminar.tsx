@@ -29,6 +29,8 @@ function Seminar() {
             width={isDesktop ? 280 : 229}
             height={isDesktop ? 300 : 249}
             alt="service - design, plan, server, web, ios, android"
+            blurDataURL={SeminarImg}
+            placeholder="blur"
           />
         }
       />

@@ -1,6 +1,6 @@
-import AppjamImage from '@src/assets/images/Appjam.svg';
-import SopkathonImage from '@src/assets/images/Sopkathon.svg';
-import SoptTermImage from '@src/assets/images/Sopt-Term.svg';
+import AppjamImage from '@src/assets/replaceMe/MainImg/img_appjam.png';
+import SopkathonImage from '@src/assets/replaceMe/MainImg/img_sopkathon.png';
+import SoptTermImage from '@src/assets/replaceMe/MainImg/img_sopt-term.png';
 import { appjamInfo, sopkathonInfo, soptTermInfo } from '@src/assets/replaceMe/statistics';
 import RoundButton from '@src/components/common/RoundButton';
 import { useRouter } from 'next/router';
@@ -25,7 +25,7 @@ function Events() {
             <Event
               titleKorean="앱잼"
               titleEnglish="Appjam"
-              imageSrc={AppjamImage}
+              imageSrc={AppjamImage.src}
               eventDetails={appjamInfo}
             />
           </Fade>
@@ -33,7 +33,7 @@ function Events() {
             <Event
               titleKorean="솝커톤"
               titleEnglish="Sopkathon"
-              imageSrc={SopkathonImage}
+              imageSrc={SopkathonImage.src}
               eventDetails={sopkathonInfo}
             />
           </Fade>
@@ -41,7 +41,7 @@ function Events() {
             <Event
               titleKorean="솝텀프로젝트"
               titleEnglish="SOPT-term"
-              imageSrc={SoptTermImage}
+              imageSrc={SoptTermImage.src}
               eventDetails={soptTermInfo}
             />
           </Fade>

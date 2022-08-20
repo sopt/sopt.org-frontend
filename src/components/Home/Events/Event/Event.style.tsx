@@ -1,6 +1,10 @@
 import styled from '@emotion/styled';
 
-export const Wrap = styled.div``;
+export const Wrap = styled.div`
+  & img {
+    border-radius: 30px;
+  }
+`;
 
 export const TitleWrap = styled.div`
   display: flex;
