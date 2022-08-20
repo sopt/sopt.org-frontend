@@ -10,7 +10,17 @@ export const Root = styled.h1<TitleStyleProps>`
   line-height: 44px;
   white-space: pre-line;
 
+  white-space: pre-line;
+
   font-family: 'SUIT', arial;
   font-size: ${({ fontSize }) => fontSize};
   font-weight: 800;
+
+  @media (max-width: 1279px) {
+    border-bottom: 6px solid ${({ theme }) => theme.colors.mainColor};
+    padding-bottom: 5px;
+
+    line-height: 31px;
+    font-size: 25px;
+  }
 `;

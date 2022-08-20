@@ -90,6 +90,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.32.0_mjxvp6vknbs6aake53neguzoxy
   '@typescript-eslint/parser': 5.32.0_vop3wml3iobydwkmmjaboen3ki
   babel-jest: 28.1.3_@babel+core@7.18.10
+  babel-jest: 28.1.3_@babel+core@7.18.10
   babel-plugin-inline-react-svg: 2.0.1_@babel+core@7.18.10
   babel-plugin-module-resolver: 4.1.0
   eslint: 8.21.0
@@ -1991,6 +1992,24 @@ packages:
     resolution: {integrity: sha512-kVzjari1s2YVi77D3w1yuvohV2idweYXMCDzqBiVNN63TcDWrIlTVOYpqVrvbbyOE/IyzBoTKF0fdnLPEORFxA==}
     dependencies:
       '@babel/types': 7.18.10
+    dev: true
+
+  /@types/eslint-scope/3.7.4:
+    resolution: {integrity: sha512-9K4zoImiZc3HlIp6AVUDE4CWYx22a+lhSZMYNpbjW04+YF0KWj4pJXnEMjdnFTiQibFFmElcsasJXDbdI/EPhA==}
+    dependencies:
+      '@types/eslint': 8.4.5
+      '@types/estree': 0.0.51
+    dev: true
+
+  /@types/eslint/8.4.5:
+    resolution: {integrity: sha512-dhsC09y1gpJWnK+Ff4SGvCuSnk9DaU0BJZSzOwa6GVSg65XtTugLBITDAAzRU5duGBoXBHpdR/9jHGxJjNflJQ==}
+    dependencies:
+      '@types/estree': 0.0.51
+      '@types/json-schema': 7.0.11
+    dev: true
+
+  /@types/estree/0.0.51:
+    resolution: {integrity: sha512-CuPgU6f3eT/XgKKPqKd/gLZV1Xmvf1a2R5POBOGQa6uv82xpls89HU5zKeVoyR8XzHd1RGNOlQlvUe3CFkjWNQ==}
     dev: true
 
   /@types/eslint-scope/3.7.4:

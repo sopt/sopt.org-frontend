@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
 import Footer from '@src/components/common/Footer';
+import Header from '@src/components/common/Header';
 import Branding from '@src/components/Home/Branding';
 import Events from '@src/components/Home/Events';
 import Introduce from '@src/components/Home/Introduce';
 import Recruit from '@src/components/Home/Recruit';
-import SoptMarquee from '@src/components/Home/SoptMarquee';
 import Top from '@src/components/Home/Top';
 import type { NextPage } from 'next';
 import Head from 'next/head';
@@ -17,6 +17,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header />
       <Styled.Main>
         <Top />
         <Introduce />
@@ -33,8 +34,10 @@ export default Home;
 
 const Styled = {
   Main: styled.main`
-    height: 100vh;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    @media (min-width: 1280px) {
+      height: 100vh;
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+    }
   `,
 };

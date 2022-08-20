@@ -22,4 +22,15 @@ export const RoundName = styled.p`
   font-family: 'SUIT', arial;
   font-size: 16px;
   font-weight: 700;
+
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+    margin-top: 15px;
+
+    border: 1.5px solid ${({ theme }) => theme.colors.soptWhite};
+    border-radius: 14.5px;
+    padding: 6px 20px;
+
+    font-size: 14px;
+  }
 `;
