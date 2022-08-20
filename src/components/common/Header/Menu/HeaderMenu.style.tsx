@@ -51,16 +51,17 @@ export const CloseButton = styled.button<CloseButtonProps>`
   right: -256px;
 
   background: url(${(props: CloseButtonProps) => props.src}) no-repeat;
-
+  background-size: cover;
   width: 24px;
   height: 24px;
 
   /* 모바일 뷰 */
   @media (max-width: 1279px) {
     top: 47px;
-    right: -170px;
-    width: 48px;
-    height: 48px;
+    right: -90%;
+    /* right: -170px; */
+    width: 16px;
+    height: 16px;
   }
 `;
 
