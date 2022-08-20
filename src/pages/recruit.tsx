@@ -15,14 +15,16 @@ function recruit() {
   };
 
   return (
-    <Styled.Root>
+    <>
       <Header />
-      <Image src={Sopt404.src} width={296} height={78} alt="솝트" />
-      <span>아직 지원 기간이 아니에요!</span>
-      {/* <RoundButton isReverse={true} onClick={handleClick}>
+      <Styled.Root>
+        <Image src={Sopt404.src} width={296} height={78} alt="솝트" />
+        <span>아직 지원 기간이 아니에요!</span>
+        {/* <RoundButton isReverse={true} onClick={handleClick}>
         홈으로 가기
       </RoundButton> */}
-    </Styled.Root>
+      </Styled.Root>
+    </>
   );
 }
 
