@@ -20,6 +20,8 @@ function Symbol({ imgSrc, name }: SymbolProps) {
         width={isDesktop ? '140px' : '100px'}
         height={isDesktop ? '140px' : '100px'}
         alt="브랜딩 심볼 이미지"
+        blurDataURL={imgSrc}
+        placeholder="blur"
       />
       <S.RoundName>{name}</S.RoundName>
     </S.Root>

@@ -10,8 +10,8 @@
           "importSource": "@emotion/react"
         }
       }
-    ],
-    "@babel/preset-env"
+    ]
+    // "@babel/preset-env"
   ],
   "plugins": [
     // "inline-react-svg",

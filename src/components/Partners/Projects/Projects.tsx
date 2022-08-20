@@ -1,10 +1,33 @@
 import TempImage from '@src/assets/images/Appjam.svg';
+import CommonError from '@src/components/common/CommonError';
+import ErrorBoundary from '@src/components/common/ErrorBoundary';
+import SSRSafeSuspense from '@src/components/common/SSRSafeSuspense';
 import UnderlinedTitle from '@src/components/common/UnderlinedTitle';
 import ProjectCard from '@src/components/Partners/Projects/ProjectCard';
+import { getPartnersData } from '@src/lib/api';
+import { useQuery } from 'react-query';
+import { ClipLoader } from 'react-spinners';
 
 import * as S from './Projects.style';
 
-function Projects() {
+const Projects = () => {
+  return (
+    <ErrorBoundary
+      renderFallback={({ error, reset }) => <CommonError error={error} reset={reset} />}
+    >
+      {/*  TODO skeleton 추가 */}
+      <SSRSafeSuspense fallback={<ClipLoader size={50} color={'#ffffff'} />}>
+        <Resolved />
+      </SSRSafeSuspense>
+    </ErrorBoundary>
+  );
+};
+
+function Resolved() {
+  const { data } = useQuery('partners', () => getPartnersData(), {
+    suspense: true,
+  });
+
   return (
     <S.Root>
       <UnderlinedTitle>{'PROJECT\nwith SOPT'}</UnderlinedTitle>
@@ -12,78 +35,16 @@ function Projects() {
         다양한 기업 및 단체에서 SOPT와 협력 프로젝트를 진행하고 있습니다.
       </S.Description>
       <S.ProjectWrap>
-        <ProjectCard
-          year={2022}
-          imageSrc={TempImage}
-          title={'KB D.N.A 프로젝트'}
-          description={
-            'KB금융그룹과 SOPT, 디지털 전문가 간 협업을\n' +
-            '통해 KB금융그룹의 디지털 프로젝트에 대한\n' +
-            '개선과제를 함께 발굴하고 이를 실행하기 위한\n' +
-            '구체적인 아이디어를 도출하는 프로젝트 팀'
-          }
-          etc={'2018년부터 총 5회 진행'}
-        />
-        <ProjectCard
-          year={2022}
-          imageSrc={TempImage}
-          title={'KB D.N.A 프로젝트'}
-          description={
-            'KB금융그룹과 SOPT, 디지털 전문가 간 협업을\n' +
-            '통해 KB금융그룹의 디지털 프로젝트에 대한\n' +
-            '개선과제를 함께 발굴하고 이를 실행하기 위한\n' +
-            '구체적인 아이디어를 도출하는 프로젝트 팀'
-          }
-          etc={'2018년부터 총 5회 진행'}
-        />
-        <ProjectCard
-          year={2022}
-          imageSrc={TempImage}
-          title={'KB D.N.A 프로젝트'}
-          description={
-            'KB금융그룹과 SOPT, 디지털 전문가 간 협업을\n' +
-            '통해 KB금융그룹의 디지털 프로젝트에 대한\n' +
-            '개선과제를 함께 발굴하고 이를 실행하기 위한\n' +
-            '구체적인 아이디어를 도출하는 프로젝트 팀'
-          }
-          etc={'2018년부터 총 5회 진행'}
-        />
-        <ProjectCard
-          year={2022}
-          imageSrc={TempImage}
-          title={'KB D.N.A 프로젝트'}
-          description={
-            'KB금융그룹과 SOPT, 디지털 전문가 간 협업을\n' +
-            '통해 KB금융그룹의 디지털 프로젝트에 대한\n' +
-            '개선과제를 함께 발굴하고 이를 실행하기 위한\n' +
-            '구체적인 아이디어를 도출하는 프로젝트 팀'
-          }
-          etc={'2018년부터 총 5회 진행'}
-        />
-        <ProjectCard
-          year={2022}
-          imageSrc={TempImage}
-          title={'KB D.N.A 프로젝트'}
-          description={
-            'KB금융그룹과 SOPT, 디지털 전문가 간 협업을\n' +
-            '통해 KB금융그룹의 디지털 프로젝트에 대한\n' +
-            '개선과제를 함께 발굴하고 이를 실행하기 위한\n' +
-            '구체적인 아이디어를 도출하는 프로젝트 팀'
-          }
-          etc={'2018년부터 총 5회 진행'}
-        />
-        <ProjectCard
-          year={2022}
-          imageSrc={TempImage}
-          title={'KB D.N.A 프로젝트'}
-          description={
-            'KB금융그룹과 SOPT, 디지털 전문가 간 협업을\n' +
-            '통해 KB금융그룹의 디지털 프로젝트에 대한\n' +
-            '개선과제를 함께 발굴하고 이를 실행하기 위한\n' +
-            '구체적인 아이디어를 도출하는 프로젝트 팀'
-          }
-          etc={'2018년부터 총 5회 진행'}
-        />
+        {data?.data?.projects?.map((item) => (
+          <ProjectCard
+            key={item.id}
+            imageSrc={item.posterImage}
+            year={item.year}
+            title={item.title}
+            description={item.content}
+            etc={item.subContent}
+          />
+        ))}
       </S.ProjectWrap>
     </S.Root>
   );

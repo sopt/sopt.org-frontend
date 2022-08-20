@@ -7,7 +7,14 @@ import React from 'react';
 function wrong() {
   return (
     <Styled.Root>
-      <Image src={Sopt404.src} width={296} height={78} alt="솝트" />
+      <Image
+        src={Sopt404.src}
+        width={296}
+        height={78}
+        alt="솝트"
+        blurDataURL={Sopt404.src}
+        placeholder="blur"
+      />
       <span>잘못된 경로예요!</span>
     </Styled.Root>
   );

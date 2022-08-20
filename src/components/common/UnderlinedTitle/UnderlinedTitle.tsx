@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 import * as S from './UnderlinedTitle.style';
 
@@ -7,7 +7,7 @@ export interface TitleStyleProps {
 }
 
 interface TitleProps extends TitleStyleProps {
-  children: string;
+  children: string | ReactElement;
   [key: string]: any;
 }
 

@@ -19,7 +19,14 @@ function PartInfos() {
           <Fade left delay={item.delay + 150}>
             <S.DotImg>
               {idx < PART_INFO.length - 1 && (
-                <Image src={DotImg} width={50} height={10} alt="split dot" />
+                <Image
+                  src={DotImg}
+                  width={50}
+                  height={10}
+                  alt="split dot"
+                  blurDataURL={DotImg}
+                  placeholder="blur"
+                />
               )}
             </S.DotImg>
           </Fade>
