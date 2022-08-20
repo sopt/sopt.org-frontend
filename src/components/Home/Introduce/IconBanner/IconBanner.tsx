@@ -8,16 +8,18 @@ import { useEffect } from 'react';
 import Marquee from 'react-fast-marquee';
 import { useQuery } from 'react-query';
 import { useMediaQuery } from 'react-responsive';
+import { ClipLoader } from 'react-spinners';
+
+import * as S from './IconBanner.style';
 const IconBanner = () => {
   return (
-    // <SSRSafeSuspense fallback={<div>로딩중</div>}>
-    <Resolved />
-    // </SSRSafeSuspense>
+    <SSRSafeSuspense fallback={<ClipLoader size={150} />}>
+      <Resolved />
+    </SSRSafeSuspense>
   );
 };
 
 function Resolved() {
-  const imgList = Array(50).fill(Logo);
   const isDesktop = useMediaQuery({
     query: '(min-width: 1280px)',
   });
@@ -25,28 +27,22 @@ function Resolved() {
     suspense: true,
   });
 
-  useEffect(() => {
-    console.log('>> ggdata', data);
-  }, [data]);
-
-  // useEffect(() => {
-  //   getMainLogo();
-  // }, []);
-
-  // useEffect(() => {
-  //   getMainLogo();
-  // }, []);
-
   return (
     <Marquee pauseOnHover={true} gradient={false} speed={50}>
-      {imgList.map((imgSrc) => (
-        <Image
-          key={imgSrc.id}
-          src={imgSrc}
-          width={isDesktop ? '55px' : '35px'}
-          height={isDesktop ? '55px' : '35px'}
-          alt="프로덕트 로고"
-        />
+      {data?.data?.map((imgSrc: any) => (
+        <>
+          <Image
+            key={imgSrc.id}
+            src={imgSrc.image}
+            className="main__logo"
+            width={isDesktop ? '55px' : '35px'}
+            height={isDesktop ? '55px' : '35px'}
+            alt="프로덕트 로고"
+            blurDataURL={imgSrc.image}
+            placeholder="blur"
+          />
+          <S.dummyData size={isDesktop ? '55px' : '35px'} />
+        </>
       ))}
     </Marquee>
   );
