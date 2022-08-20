@@ -9,9 +9,9 @@ export const Root = styled.section<RootStyleProps>`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: calc(100vh - 326px);
+  height: calc(100vh - 163px);
   height: ${({ height }) => !height && '100vh'};
-  scroll-snap-align: center;
+  scroll-snap-align: ${({ height }) => (height ? 'start' : 'center')};
 `;
 
 export const Wrap = styled.div<RootStyleProps>`

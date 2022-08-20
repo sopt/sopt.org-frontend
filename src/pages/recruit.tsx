@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import Sopt404 from '@src/assets/images/sopt_404.png';
+import Header from '@src/components/common/Header';
 import RoundButton from '@src/components/common/RoundButton';
 import theme from '@src/styles/theme';
 import Image from 'next/image';
@@ -15,11 +16,12 @@ function recruit() {
 
   return (
     <Styled.Root>
+      <Header />
       <Image src={Sopt404.src} width={296} height={78} alt="솝트" />
       <span>아직 지원 기간이 아니에요!</span>
-      <RoundButton isReverse={true} onClick={handleClick}>
+      {/* <RoundButton isReverse={true} onClick={handleClick}>
         홈으로 가기
-      </RoundButton>
+      </RoundButton> */}
     </Styled.Root>
   );
 }
