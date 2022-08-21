@@ -3,11 +3,16 @@ import { NetworkingImage } from '@src/assets/replaceMe/imageList';
 import UnderlinedTitle from '@src/components/common/UnderlinedTitle';
 import { ABOUT_INFO } from '@src/constants/about';
 import Image from 'next/image';
+import { useMediaQuery } from 'react-responsive';
 
 import AboutWrapper from '../AboutWrapper';
 import * as S from './StudyNetworking.style';
 
 function StudyNetworking() {
+  const isDesktop = useMediaQuery({
+    query: '(min-width: 1280px)',
+  });
+
   return (
     <AboutWrapper>
       <AboutWrapper.Top
@@ -42,8 +47,8 @@ function StudyNetworking() {
             return (
               <Image
                 src={item.image}
-                width={215}
-                height={130}
+                width={isDesktop ? 215 : 200}
+                height={isDesktop ? 130 : 120}
                 alt={`네트워킹 ${item.id}`}
                 key={item.id}
                 blurDataURL={item.image}
