@@ -1,7 +1,8 @@
 import xButton from '@src/assets/icons/xButton.png';
 import Channels from '@src/components/common/Footer/Channels';
+import useNoScroll from '@src/hooks/useNoScroll';
 import { useRouter } from 'next/router';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import * as S from './HeaderMenu.style';
 
@@ -10,6 +11,7 @@ interface HeaderMenuProps {
 }
 
 function HeaderMenu({ handleCloseClick }: HeaderMenuProps) {
+  useNoScroll();
   const router = useRouter();
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {

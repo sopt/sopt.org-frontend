@@ -61,6 +61,8 @@ export const HamburgerBar = styled.button<StyleProps>`
 
   background: url(${(props) => props.src}) center no-repeat;
   background-size: 100% 100%;
+
+  cursor: pointer;
   width: 24px;
   height: 24px;
 

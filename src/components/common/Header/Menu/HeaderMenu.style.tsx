@@ -53,6 +53,8 @@ export const CloseButton = styled.button<CloseButtonProps>`
 
   background: url(${(props: CloseButtonProps) => props.src}) no-repeat;
   background-size: cover;
+  cursor: pointer;
+
   width: 24px;
   height: 24px;
 
