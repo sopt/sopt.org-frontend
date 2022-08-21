@@ -9,8 +9,8 @@ export const Root = styled.ul`
 
   /* 모바일 뷰 */
   @media (max-width: 1279px) {
-    gap: 10px;
-    width: 305px;
+    gap: 20px;
+    width: 340px;
     overflow: auto;
 
     /* Hide scrollbar for Chrome, Safari and Opera */
