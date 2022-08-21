@@ -3,7 +3,19 @@ import reset from 'emotion-reset';
 export const global = css`
   ${reset}
 
-  h1, h2, h3, h4, h5, h6, p {
+  html {
+    -webkit-touch-callout: none;
+    /* -webkit-user-select:none; */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
     color: #fcfcfc;
   }
 
