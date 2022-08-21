@@ -28,6 +28,7 @@ export const Wrap = styled.div<RootStyleProps>`
 
   /* 모바일 뷰 */
   @media (max-width: 1279px) {
+    margin-top: 100px;
     width: 305px;
   }
 `;
