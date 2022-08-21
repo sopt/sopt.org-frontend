@@ -36,6 +36,13 @@ const Styled = {
     height: 100vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+
+    /* 모바일 뷰 */
+    @media (max-width: 1279px) {
+      display: flex;
+      flex-direction: column;
+      row-gap: 50px;
+    }
   `,
   Root: styled.section`
     display: flex;
@@ -44,6 +51,7 @@ const Styled = {
     justify-content: center;
     width: 100%;
     height: 100vh;
+
     & span {
       margin-top: 99px;
       margin-bottom: 99px;
