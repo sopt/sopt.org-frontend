@@ -67,12 +67,11 @@ export const ImageWrapper = styled.div`
 `;
 
 export const Tag = styled.p`
-
   margin-top: 15px;
   margin-bottom: 15px;
   line-height: 15px;
   letter-spacing: -0.03em;
-  font-family: 'SUIT';
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
   font-style: normal;

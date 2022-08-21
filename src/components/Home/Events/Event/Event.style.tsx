@@ -13,7 +13,7 @@ export const TitleWrap = styled.div`
 
 export const TitleKorean = styled.p`
   line-height: 30px;
-  font-family: 'SUIT', arial;
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 24px;
   font-weight: 700;
 `;
@@ -22,7 +22,7 @@ export const TitleEnglish = styled.p`
   margin-left: 5px;
   line-height: 20px;
 
-  font-family: 'SUIT', arial;
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 16px;
   font-weight: 900;
 `;

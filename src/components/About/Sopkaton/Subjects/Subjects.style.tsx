@@ -88,7 +88,7 @@ export const Item = styled.li<ItemStyleProps>`
   letter-spacing: -0.03em;
   /* margin-right: 40px; */
   color: ${({ isOdd }) => (isOdd ? theme.colors.mainColor : theme.colors.soptWhite)};
-  font-family: 'SUIT';
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 14px;
   font-weight: 600;
   font-style: normal;

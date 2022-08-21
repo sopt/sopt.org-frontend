@@ -26,7 +26,7 @@ export const AppjamInfoWrapper = styled.div`
 
   & h2 {
     color: ${({ theme }) => theme.colors.soptWhite};
-    font-family: 'SUIT';
+    font-family: 'SUIT', arial, sans-serif;
 
     &:nth-child(1) {
       width: 146px;
@@ -49,7 +49,7 @@ export const AppjamInfoWrapper = styled.div`
 
     & h2 {
       color: ${({ theme }) => theme.colors.soptWhite};
-      font-family: 'SUIT';
+      font-family: 'SUIT', arial, sans-serif;
 
       &:nth-child(1) {
         line-height: 20px;

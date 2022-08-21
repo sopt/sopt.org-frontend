@@ -5,7 +5,7 @@ export const Description = styled.div`
 
   letter-spacing: -0.03em;
   color: ${({ theme }) => theme.colors.soptWhite};
-  font-family: 'SUIT';
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
@@ -21,7 +21,7 @@ export const Contents = styled.div`
   letter-spacing: -0.03em;
   white-space: pre-line;
   color: ${({ theme }) => theme.colors.soptWhite};
-  font-family: 'SUIT';
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;

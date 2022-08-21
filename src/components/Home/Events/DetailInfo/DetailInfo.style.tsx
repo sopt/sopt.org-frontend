@@ -10,7 +10,7 @@ export const TitleLabel = styled.p`
   line-height: 20px;
   letter-spacing: -0.04em;
 
-  font-family: 'SUIT', arial;
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
 `;
@@ -18,7 +18,7 @@ export const TitleLabel = styled.p`
 export const NumberLabel = styled.p`
   line-height: 37px;
   letter-spacing: 0.05em;
-  font-family: 'SUIT', arial;
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 30px;
   font-weight: 900;
 `;

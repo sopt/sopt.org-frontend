@@ -15,11 +15,10 @@ export const Root = styled.button<StyleProps>`
 
   padding: 10px 20px;
   line-height: 25px;
-  line-height: 20px;
   letter-spacing: -0.03em;
   color: ${({ theme }) => theme.colors.soptWhite};
 
-  font-family: 'SUIT';
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
