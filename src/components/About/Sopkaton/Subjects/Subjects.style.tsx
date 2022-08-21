@@ -42,7 +42,6 @@ export const Title = styled.h2`
 
 export const List = styled.ul`
   display: flex;
-  flex-direction: row-reverse;
   column-gap: 40px;
 
   & div {
