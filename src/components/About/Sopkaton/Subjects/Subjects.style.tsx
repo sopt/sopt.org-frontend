@@ -62,7 +62,18 @@ export const List = styled.ul`
   @media (max-width: 1279px) {
     column-gap: 15px;
     width: 340px;
-    overflow: auto;
+    overflow-y: scroll;
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .example::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .example {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
   }
 `;
 export const Item = styled.li<ItemStyleProps>`
