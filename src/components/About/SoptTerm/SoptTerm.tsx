@@ -3,12 +3,17 @@ import { NetworkingImage } from '@src/assets/replaceMe/imageList';
 import UnderlinedTitle from '@src/components/common/UnderlinedTitle';
 import { ABOUT_INFO } from '@src/constants/about';
 import Image from 'next/image';
+import { useMediaQuery } from 'react-responsive';
 
 import AboutWrapper from '../AboutWrapper';
 import * as S from './SoptTerm.style';
 import SoptTermImage from './SoptTermImage';
 
 function SoptTerm() {
+  const isDesktop = useMediaQuery({
+    query: '(min-width: 1280px)',
+  });
+
   return (
     <AboutWrapper>
       <AboutWrapper.Top
@@ -28,19 +33,17 @@ function SoptTerm() {
         }
         rightProps={<SoptTermImage />}
       />
-      <AboutWrapper.Content>
-        <S.ImageWrapper>
-          <S.Filter />
-          <Image
-            src={SoptTermServices.src}
-            width={1020}
-            height={165}
-            alt="솝텀 서비스들"
-            blurDataURL={SoptTermServices.src}
-            placeholder="blur"
-          />
-        </S.ImageWrapper>
-      </AboutWrapper.Content>
+      <S.ImageWrapper>
+        <S.Filter />
+        <Image
+          src={SoptTermServices.src}
+          width={isDesktop ? 1020 : 485}
+          height={isDesktop ? 165 : 80}
+          alt="솝텀 서비스들"
+          blurDataURL={SoptTermServices.src}
+          placeholder="blur"
+        />
+      </S.ImageWrapper>
     </AboutWrapper>
   );
 }
