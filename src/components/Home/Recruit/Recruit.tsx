@@ -10,7 +10,7 @@ import * as S from './Recruit.style';
 function Recruit() {
   const router = useRouter();
   const handleClick = () => {
-    router.push('/recruit');
+    window.open('https://sopt-recruiting.web.app/recruiting/apply/ob');
   };
 
   return (

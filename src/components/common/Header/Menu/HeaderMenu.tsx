@@ -17,6 +17,11 @@ function HeaderMenu({ handleCloseClick }: HeaderMenuProps) {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     const currentMenu = e.currentTarget.id;
 
+    if (currentMenu === '/recruit') {
+      window.open('https://sopt-recruiting.web.app/recruiting/apply/ob');
+
+      return;
+    }
     router.push(currentMenu);
   };
 
