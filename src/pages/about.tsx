@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import Sopt404 from '@src/assets/images/sopt_404.png';
 import AboutHead from '@src/components/About/AboutHead';
 import Appjam from '@src/components/About/Appjam';
 import Seminar from '@src/components/About/Seminar';
@@ -10,7 +9,6 @@ import Team from '@src/components/About/Team';
 import Footer from '@src/components/common/Footer';
 import Header from '@src/components/common/Header';
 import theme from '@src/styles/theme';
-import Image from 'next/image';
 import React from 'react';
 
 function about() {

@@ -9,7 +9,13 @@ export const Description = styled.div`
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
+
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+    font-size: 12px;
+  }
 `;
+
 export const Contents = styled.div`
   margin-top: 18px;
   line-height: 180%;
@@ -20,4 +26,9 @@ export const Contents = styled.div`
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
+
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+    font-size: 14px;
+  }
 `;
