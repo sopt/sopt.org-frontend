@@ -22,7 +22,7 @@ export const Wrap = styled.div<RootStyleProps>`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 20%;
+  margin-top: 15%;
   /* margin-top: ${({ height }) => (height ? '100px' : '200px')}; */
   width: 1040px;
 

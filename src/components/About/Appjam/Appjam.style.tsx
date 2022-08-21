@@ -35,7 +35,7 @@ export const Contents = styled.div`
 
 export const ImageWrapper = styled.div`
   position: absolute;
-  top: 10%;
+  top: 100px;
   left: 50%;
   transform: translateX(-584px);
   width: fit-content;
