@@ -31,7 +31,7 @@ export const ImageWrapper = styled.div`
   }
 
   .timi__button {
-    width: 185px;
+    width: 188px;
 
     span {
       &:first-child {
@@ -51,7 +51,7 @@ export const ImageWrapper = styled.div`
   }
 
   .media__button {
-    width: 152px;
+    width: 215px;
 
     span {
       &:first-child {
