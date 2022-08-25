@@ -11,6 +11,9 @@ export const Root = styled.li`
   border-bottom: 1px solid ${theme.colors.soptWhite};
   padding-bottom: 40px;
   width: 100%;
+  @media (max-width: 768px) {
+    padding-bottom: 20px;
+  }
 `;
 export const Section = styled.div`
   display: flex;
@@ -18,6 +21,9 @@ export const Section = styled.div`
   cursor: pointer;
   padding-top: 40px;
   width: 100%;
+  @media (max-width: 768px) {
+    padding-top: 20px;
+  }
 `;
 
 export const TItle = styled.h3`
@@ -28,7 +34,7 @@ export const TItle = styled.h3`
   font-size: 24px;
   font-weight: 700;
   font-style: normal;
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     font-size: 16px;
   }
 `;
@@ -45,6 +51,11 @@ export const Button = styled.button<ButtonStyleProps>`
   padding: 0;
   width: 24px;
   height: 13px;
+  @media (max-width: 768px) {
+    width: 16px;
+    height: 13px;
+    margin-right: 15px;
+  }
   ${ArrowDownAnimation}
   ${ArrowUpAnimation}
 
@@ -63,12 +74,15 @@ export const Contents = styled.div<ButtonStyleProps>`
   font-size: 20px;
   font-weight: 400;
   font-style: normal;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 
   ${({ isOpened }) =>
     isOpened
       ? css`
           transition: max-height 0.2s ease-in;
-          max-height: 2000px;
+          max-height: 3500px;
           @media screen and (max-width: 1280px) {
             max-height: 5000px;
           }
@@ -76,7 +90,5 @@ export const Contents = styled.div<ButtonStyleProps>`
       : css`
           transition: max-height 0.15s ease-out;
           max-height: 0;
-        `} @media screen and(max-width: 768 px) {
-    font-size: 14px;
-  }
+        `}
 `;
