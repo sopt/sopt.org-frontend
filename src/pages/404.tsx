@@ -1,10 +1,18 @@
 import styled from '@emotion/styled';
 import Sopt404 from '@src/assets/images/sopt_404.png';
+import RoundButton from '@src/components/common/RoundButton';
 import theme from '@src/styles/theme';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import React from 'react';
 
-function wrong() {
+function Wrong() {
+  const router = useRouter();
+
+  const handleButtonClick = () => {
+    router.push('/');
+  };
+
   return (
     <Styled.Root>
       <Image
@@ -16,11 +24,12 @@ function wrong() {
         placeholder="blur"
       />
       <span>잘못된 경로예요!</span>
+      <RoundButton onClick={handleButtonClick}>홈으로 가기</RoundButton>
     </Styled.Root>
   );
 }
 
-export default wrong;
+export default Wrong;
 
 const Styled = {
   Root: styled.section`
@@ -30,11 +39,13 @@ const Styled = {
     justify-content: center;
     width: 100%;
     height: 100vh;
+
     & span {
       margin-top: 99px;
+      margin-bottom: 20px;
       line-height: 56px;
       color: ${theme.colors.soptWhite};
-      font-family: 'SUIT';
+      font-family: 'SUIT', arial, sans-serif;
       font-size: 45px;
       font-weight: 400;
       font-style: normal;

@@ -5,11 +5,17 @@ import RoundButton from '@src/components/common/RoundButton';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 import * as S from './SopkatonImage.style';
 
 function SopkatonImage() {
   const router = useRouter();
+
+  const isDesktop = useMediaQuery({
+    query: '(min-width: 1280px)',
+  });
+
   const handleClick = () => {
     router.push('/projects');
   };
@@ -19,16 +25,16 @@ function SopkatonImage() {
       <S.ImageWrapper>
         <Image
           src={SopkatonImage1}
-          width={200}
-          height={200}
+          width={isDesktop ? 200 : 132}
+          height={isDesktop ? 200 : 132}
           alt="솝커톤"
           blurDataURL={SopkatonImage1.src}
           placeholder="blur"
         />
         <Image
           src={SopkatonImage2}
-          width={300}
-          height={200}
+          width={isDesktop ? 300 : 198}
+          height={isDesktop ? 200 : 132}
           alt="솝커톤"
           blurDataURL={SopkatonImage2.src}
           placeholder="blur"

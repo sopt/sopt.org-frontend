@@ -8,11 +8,10 @@ export const Root = styled.h1<TitleStyleProps>`
 
   width: max-content;
   line-height: 44px;
-  white-space: pre-line;
 
   white-space: pre-line;
 
-  font-family: 'SUIT', arial;
+  font-family: 'SUIT', arial, sans-serif;
   font-size: ${({ fontSize }) => fontSize};
   font-weight: 800;
 
@@ -22,5 +21,6 @@ export const Root = styled.h1<TitleStyleProps>`
 
     line-height: 31px;
     font-size: 25px;
+    font-weight: 900;
   }
 `;

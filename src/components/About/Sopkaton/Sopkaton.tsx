@@ -10,13 +10,13 @@ function Sopkaton() {
   return (
     <AboutWrapper>
       <AboutWrapper.Top
-        leftProps={
+        leftTitleProps={
           <>
             <S.Description>{ABOUT_INFO.SOPKATHON.description}</S.Description>
             <UnderlinedTitle fontSize="40px">{ABOUT_INFO.SOPKATHON.title}</UnderlinedTitle>
-            <S.Contents>{ABOUT_INFO.SOPKATHON.contents}</S.Contents>
           </>
         }
+        leftDescriptionProps={<S.Contents>{ABOUT_INFO.SOPKATHON.contents}</S.Contents>}
         rightProps={<SopkatonImage />}
       />
       <AboutWrapper.Content>

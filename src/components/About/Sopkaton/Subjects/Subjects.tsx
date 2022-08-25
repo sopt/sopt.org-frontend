@@ -11,19 +11,24 @@ function Subjects() {
     <S.Root>
       <S.Title>역대 주제</S.Title>
       <S.List>
-        {Object.values(SopkatonSubjectList)?.map((item, idx) => {
-          const backgroundImage =
-            idx % 2 === 0 ? SopkatonBackground.src : SopkatonReversedBackground.src;
+        {Object.values(SopkatonSubjectList)
+          ?.reverse()
+          .map((item, idx) => {
+            const backgroundImage =
+              idx % 2 === 0 ? SopkatonBackground.src : SopkatonReversedBackground.src;
 
-          return (
-            <Fade left delay={300 + idx * 100} key={item.title}>
-              <S.Item style={{ backgroundImage: `url(${backgroundImage})` }} isOdd={idx % 2 === 0}>
-                <span>{item.emoji}</span>
-                <div>{item.title}</div>
-              </S.Item>
-            </Fade>
-          );
-        })}
+            return (
+              <Fade left delay={300 + idx * 100} key={item.title}>
+                <S.Item
+                  style={{ backgroundImage: `url(${backgroundImage})` }}
+                  isOdd={idx % 2 === 0}
+                >
+                  <span>{item.emoji}</span>
+                  <div>{item.title}</div>
+                </S.Item>
+              </Fade>
+            );
+          })}
       </S.List>
     </S.Root>
   );

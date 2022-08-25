@@ -2,31 +2,38 @@ import SeminarImg from '@src/assets/images/SeminarImg.svg';
 import UnderlinedTitle from '@src/components/common/UnderlinedTitle';
 import { ABOUT_INFO } from '@src/constants/about';
 import Image from 'next/image';
+import { useMediaQuery } from 'react-responsive';
 
 import AboutWrapper from '../AboutWrapper';
 import PartInfos from './PartInfos';
 import * as S from './Seminar.style';
 
 function Seminar() {
+  const isDesktop = useMediaQuery({
+    query: '(min-width: 1280px)',
+  });
+
   return (
     <AboutWrapper>
       <AboutWrapper.Top
-        leftProps={
+        leftTitleProps={
           <>
             <S.Description>{ABOUT_INFO.SEMINAR.description}</S.Description>
             <UnderlinedTitle fontSize="40px">{ABOUT_INFO.SEMINAR.title}</UnderlinedTitle>
-            <S.Contents>{ABOUT_INFO.SEMINAR.contents}</S.Contents>
           </>
         }
+        leftDescriptionProps={<S.Contents>{ABOUT_INFO.SEMINAR.contents}</S.Contents>}
         rightProps={
-          <Image
-            src={SeminarImg}
-            width={280}
-            height={300}
-            alt="service - design, plan, server, web, ios, android"
-            blurDataURL={SeminarImg}
-            placeholder="blur"
-          />
+          <S.ImageWrapper>
+            <Image
+              src={SeminarImg}
+              width={isDesktop ? 280 : 229}
+              height={isDesktop ? 300 : 249}
+              alt="service - design, plan, server, web, ios, android"
+              blurDataURL={SeminarImg}
+              placeholder="blur"
+            />
+          </S.ImageWrapper>
         }
       />
       <AboutWrapper.Content>
