@@ -5,10 +5,15 @@ import Team2 from '@src/assets/images/team2.png';
 import BorderRoundButton from '@src/components/common/BorderRoundButton';
 import Image from 'next/image';
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 import * as S from './TeamImage.style';
 
 function TeamImage() {
+  const isDesktop = useMediaQuery({
+    query: '(min-width: 1280px)',
+  });
+
   const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     switch (e.currentTarget.id) {
       case 'timi':
@@ -25,8 +30,9 @@ function TeamImage() {
       <S.ImageWrapper>
         <Image
           src={Team1}
-          width={250}
-          height={200}
+          layout={'fixed'}
+          width={isDesktop ? 250 : 147}
+          height={isDesktop ? 200 : 147}
           alt="운영팀"
           blurDataURL={Team1.src}
           placeholder="blur"
@@ -35,8 +41,8 @@ function TeamImage() {
         <BorderRoundButton id="timi" className="timi__button" onClick={handleClick}>
           <Image
             src={InstagramIcon}
-            width={24}
-            height={24}
+            width={isDesktop ? 24 : 18}
+            height={isDesktop ? 24 : 18}
             alt="인스타 아이콘"
             blurDataURL={InstagramIcon.src}
             placeholder="blur"
@@ -47,8 +53,9 @@ function TeamImage() {
       <S.ImageWrapper>
         <Image
           src={Team2}
-          width={250}
-          height={200}
+          layout={'fixed'}
+          width={isDesktop ? 250 : 147}
+          height={isDesktop ? 200 : 147}
           alt="미디어팀"
           blurDataURL={Team2.src}
           placeholder="blur"
@@ -57,8 +64,8 @@ function TeamImage() {
         <BorderRoundButton id="media" className="media__button" onClick={handleClick}>
           <Image
             src={YoutubeIcon}
-            width={26}
-            height={18}
+            width={isDesktop ? 26 : 18}
+            height={isDesktop ? 18 : 13}
             alt="유튜브 아이콘"
             blurDataURL={YoutubeIcon.src}
             placeholder="blur"

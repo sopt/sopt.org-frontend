@@ -19,7 +19,7 @@ export const RoundName = styled.p`
 
   color: ${({ theme }) => theme.colors.soptWhite};
 
-  font-family: 'SUIT', arial;
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
 

@@ -7,7 +7,7 @@ export const NetworkingImage = [
   },
   {
     id: 2,
-    image: '/images/networking2.png',
+    image: '/images/networking2.jpg',
   },
   {
     id: 3,

@@ -17,7 +17,7 @@ export const Description = styled.p`
 
   color: ${({ theme }) => theme.colors.soptWhite};
 
-  font-family: 'SUIT', Arial;
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;

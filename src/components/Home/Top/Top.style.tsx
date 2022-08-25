@@ -46,7 +46,7 @@ export const TextWrap = styled.div`
 
 export const SoptTitle = styled.h1`
   line-height: 110%;
-  font-family: 'SUIT', arial;
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 60px;
   font-weight: 900;
 
@@ -63,7 +63,7 @@ export const SoptSubtitle = styled.h2`
   letter-spacing: -0.03em;
   letter-spacing: -0.03em;
 
-  font-family: 'SUIT', arial;
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 30px;
   font-weight: 700;
 
@@ -78,7 +78,7 @@ export const SoptDescription = styled.h3`
   line-height: 160%;
   line-height: 32px;
 
-  font-family: 'SUIT', arial;
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 20px;
   font-weight: 300;
 
@@ -102,7 +102,7 @@ export const ScrollWrap = styled.div`
 export const ScrollText = styled.p`
   margin-bottom: 20px;
   text-align: center;
-  font-family: 'SUIT', arial;
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 20px;
   font-weight: 500;
 

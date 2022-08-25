@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>SOPT Main Page</title>
+        <title>SOPT</title>
         <meta name="description" content="sopt입니다.." />
         <meta
           name="viewport"

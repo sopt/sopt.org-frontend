@@ -5,11 +5,17 @@ import RoundButton from '@src/components/common/RoundButton';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 import * as S from './SoptTermImage.style';
 
 function SoptTermImage() {
   const router = useRouter();
+
+  const isDesktop = useMediaQuery({
+    query: '(min-width: 1280px)',
+  });
+
   const handleClick = () => {
     router.push('/projects');
   };
@@ -19,16 +25,16 @@ function SoptTermImage() {
       <S.ImageWrapper>
         <Image
           src={SoptTermImage1}
-          width={200}
-          height={200}
+          width={isDesktop ? 200 : 132}
+          height={isDesktop ? 200 : 132}
           alt="솝커톤"
           blurDataURL={SoptTermImage1.src}
           placeholder="blur"
         />
         <Image
           src={SoptTermImage2}
-          width={300}
-          height={200}
+          width={isDesktop ? 300 : 198}
+          height={isDesktop ? 200 : 132}
           alt="솝커톤"
           blurDataURL={SoptTermImage2.src}
           placeholder="blur"

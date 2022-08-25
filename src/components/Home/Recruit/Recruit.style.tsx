@@ -66,7 +66,7 @@ export const PlainCircleText = styled.p`
   line-height: 20px;
   letter-spacing: -0.04em;
 
-  font-family: 'SUIT', arial;
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 15px;
   font-weight: 500;
 
@@ -88,7 +88,7 @@ export const GradientCircleText = styled.p`
   letter-spacing: -0.04em;
 
   color: ${({ theme }) => theme.colors.mainColor};
-  font-family: 'SUIT', arial;
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
 
@@ -129,7 +129,7 @@ export const Description = styled.p`
   line-height: 200%;
   letter-spacing: -0.03em;
 
-  font-family: 'SUIT', arial;
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
 
