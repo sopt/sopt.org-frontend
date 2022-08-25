@@ -24,14 +24,16 @@ function Seminar() {
         }
         leftDescriptionProps={<S.Contents>{ABOUT_INFO.SEMINAR.contents}</S.Contents>}
         rightProps={
-          <Image
-            src={SeminarImg}
-            width={isDesktop ? 280 : 229}
-            height={isDesktop ? 300 : 249}
-            alt="service - design, plan, server, web, ios, android"
-            blurDataURL={SeminarImg}
-            placeholder="blur"
-          />
+          <S.ImageWrapper>
+            <Image
+              src={SeminarImg}
+              width={isDesktop ? 280 : 229}
+              height={isDesktop ? 300 : 249}
+              alt="service - design, plan, server, web, ios, android"
+              blurDataURL={SeminarImg}
+              placeholder="blur"
+            />
+          </S.ImageWrapper>
         }
       />
       <AboutWrapper.Content>

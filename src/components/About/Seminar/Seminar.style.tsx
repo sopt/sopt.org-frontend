@@ -31,3 +31,10 @@ export const Contents = styled.div`
     font-size: 14px;
   }
 `;
+
+export const ImageWrapper = styled.div`
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+    margin-left: 38px;
+  }
+`;
