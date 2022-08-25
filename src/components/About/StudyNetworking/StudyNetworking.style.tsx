@@ -49,6 +49,7 @@ export const ImageListWrapper = styled.div`
     overflow-y: scroll;
 
     & span {
+      border-radius: 12px;
       min-width: 200px;
     }
   }
