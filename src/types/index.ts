@@ -11,7 +11,8 @@ export type AboutInfoType =
 export interface ABOUT_INFO_TYPE {
   description: string;
   title: string;
-  contents: string;
+  pc_contents: string;
+  mobile_contents: string;
 }
 
 export type PartKorean = '기획' | '디자인' | '개발';

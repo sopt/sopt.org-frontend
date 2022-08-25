@@ -30,7 +30,11 @@ function Appjam() {
               <UnderlinedTitle fontSize="40px">{ABOUT_INFO.APPJAM.title}</UnderlinedTitle>
             </>
           }
-          leftDescriptionProps={<S.Contents>{ABOUT_INFO.APPJAM.contents}</S.Contents>}
+          leftDescriptionProps={
+            <S.Contents>
+              {isDesktop ? ABOUT_INFO.APPJAM.pc_contents : ABOUT_INFO.APPJAM.mobile_contents}
+            </S.Contents>
+          }
           rightProps={<AppjamBox />}
         />
         <AboutWrapper.Content>

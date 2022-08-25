@@ -22,7 +22,11 @@ function Seminar() {
             <UnderlinedTitle fontSize="40px">{ABOUT_INFO.SEMINAR.title}</UnderlinedTitle>
           </>
         }
-        leftDescriptionProps={<S.Contents>{ABOUT_INFO.SEMINAR.contents}</S.Contents>}
+        leftDescriptionProps={
+          <S.Contents>
+            {isDesktop ? ABOUT_INFO.SEMINAR.pc_contents : ABOUT_INFO.SEMINAR.mobile_contents}
+          </S.Contents>
+        }
         rightProps={
           <S.ImageWrapper>
             <Image

@@ -24,7 +24,9 @@ function StudyNetworking() {
         }
         leftDescriptionProps={
           <S.Contents>
-            {ABOUT_INFO.STUDY_NETWORKUNG.contents}
+            {isDesktop
+              ? ABOUT_INFO.STUDY_NETWORKUNG.pc_contents
+              : ABOUT_INFO.STUDY_NETWORKUNG.mobile_contents}
             <br />
             <br />
             <strong>#누구나_참여하고_친해지는</strong>

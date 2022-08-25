@@ -44,6 +44,10 @@ export const ImageWrapper = styled.div`
       }
     }
 
+    @media (max-width: 1279px) {
+      width: 122px;
+    }
+
     /* 모바일 뷰 */
     @media (max-width: 1279px) {
       width: 132px;
@@ -52,7 +56,6 @@ export const ImageWrapper = styled.div`
 
   .media__button {
     width: 215px;
-
     span {
       &:first-child {
         margin-right: 8px !important;
@@ -62,6 +65,9 @@ export const ImageWrapper = styled.div`
           margin-right: 5px !important;
         }
       }
+    }
+    @media (max-width: 1279px) {
+      width: 144px;
     }
   }
 `;

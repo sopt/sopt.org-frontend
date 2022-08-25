@@ -25,7 +25,7 @@ function SoptTerm() {
         }
         leftDescriptionProps={
           <S.Contents>
-            {ABOUT_INFO.SOPTTERM.contents}
+            {isDesktop ? ABOUT_INFO.SOPTTERM.pc_contents : ABOUT_INFO.SOPTTERM.mobile_contents}
             <br />
             <br />
             <strong>#한기수이상_수료자만_가능</strong>
