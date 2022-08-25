@@ -1,43 +1,19 @@
 import styled from '@emotion/styled';
 
-export const Root = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-  height: 100vh;
-  scroll-snap-align: center;
-`;
-
-export const Wrap = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 160px;
-  width: 1040px;
-`;
-
-export const ContentWrap = styled.div`
-  width: 1040px;
-`;
-
-export const InfoText = styled.article``;
-export const InfoImg = styled.div``;
-export const TopBox = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
 export const Description = styled.div`
   line-height: 20px;
 
   letter-spacing: -0.03em;
   color: ${({ theme }) => theme.colors.soptWhite};
-  font-family: 'SUIT';
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
+
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+    font-size: 12px;
+  }
 `;
 export const Contents = styled.div`
   line-height: 180%;
@@ -45,8 +21,20 @@ export const Contents = styled.div`
   white-space: pre-line;
 
   color: ${({ theme }) => theme.colors.soptWhite};
-  font-family: 'SUIT';
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
+
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+    font-size: 14px;
+  }
+`;
+
+export const ImageWrapper = styled.div`
+  /* 모바일 뷰 */
+  @media (max-width: 1279px) {
+    margin-left: 38px;
+  }
 `;

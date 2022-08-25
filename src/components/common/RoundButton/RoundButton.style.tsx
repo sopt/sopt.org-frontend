@@ -19,7 +19,7 @@ export const Root = styled.button<StyleProps>`
       ? ({ theme }) => theme.colors.soptWhite
       : ({ theme }) => theme.colors.mainColor};
 
-  font-family: 'SUIT', arial;
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 20px;
   font-weight: 700;
 

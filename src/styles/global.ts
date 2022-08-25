@@ -1,8 +1,8 @@
 import { css } from '@emotion/react';
 import reset from 'emotion-reset';
+
 export const global = css`
   ${reset}
-
   html {
     -webkit-touch-callout: none;
     /* -webkit-user-select:none; */
@@ -35,37 +35,37 @@ export const global = css`
   }
 
   @font-face {
-    font-family: 'SUIT';
+    font-family: 'SUIT', arial, sans-serif;
     font-weight: 100;
     src: url('./fonts/SUIT-Thin.woff2') format('woff2'),
       url('./fonts/SUIT-Thin.otf') format('truetype');
   }
   @font-face {
-    font-family: 'SUIT';
+    font-family: 'SUIT', arial, sans-serif;
     font-weight: 200;
     src: url('./fonts/SUIT-ExtraLight.woff2') format('woff2'),
       url('./fonts/SUIT-ExtraLight.otf') format('truetype');
   }
   @font-face {
-    font-family: 'SUIT';
+    font-family: 'SUIT', arial, sans-serif;
     font-weight: 300;
     src: url('./fonts/SUIT-Light.woff2') format('woff2'),
       url('./fonts/SUIT-Light.otf') format('truetype');
   }
   @font-face {
-    font-family: 'SUIT';
+    font-family: 'SUIT', arial, sans-serif;
     font-weight: 400;
     src: url('./fonts/SUIT-Regular.woff2') format('woff2'),
       url('./fonts/SUIT-Regular.otf') format('truetype');
   }
   @font-face {
-    font-family: 'SUIT';
+    font-family: 'SUIT', arial, sans-serif;
     font-weight: 500;
     src: url('./fonts/SUIT-Medium.woff2') format('woff2'),
       url('./fonts/SUIT-Medium.otf') format('truetype');
   }
   @font-face {
-    font-family: 'SUIT';
+    font-family: 'SUIT', arial, sans-serif;
     font-weight: 600;
     src: url('./fonts/SUIT-SemiBold.woff2') format('woff2'),
       url('./fonts/SUIT-SemiBold.otf') format('truetype');

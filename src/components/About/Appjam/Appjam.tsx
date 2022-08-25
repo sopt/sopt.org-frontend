@@ -3,26 +3,34 @@ import UnderlinedTitle from '@src/components/common/UnderlinedTitle';
 import { ABOUT_INFO } from '@src/constants/about';
 import Image from 'next/image';
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 import AboutWrapper from '../AboutWrapper';
 import * as S from './Appjam.style';
 import AppjamBox from './AppjamBox';
 import AppjamStep from './AppjamStep';
+
 function Appjam() {
+  const isDesktop = useMediaQuery({
+    query: '(min-width: 1280px)',
+  });
+
   return (
     <S.AppjamWrapper>
       <S.ImageWrapper>
-        <Image src={AppjamBackgrouondPc.src} width={454} height={319} alt="background flower" />
+        {isDesktop && (
+          <Image src={AppjamBackgrouondPc.src} width={454} height={319} alt="background flower" />
+        )}
       </S.ImageWrapper>
       <AboutWrapper>
         <AboutWrapper.Top
-          leftProps={
+          leftTitleProps={
             <>
               <S.Description>{ABOUT_INFO.APPJAM.description}</S.Description>
               <UnderlinedTitle fontSize="40px">{ABOUT_INFO.APPJAM.title}</UnderlinedTitle>
-              <S.Contents>{ABOUT_INFO.APPJAM.contents}</S.Contents>
             </>
           }
+          leftDescriptionProps={<S.Contents>{ABOUT_INFO.APPJAM.contents}</S.Contents>}
           rightProps={<AppjamBox />}
         />
         <AboutWrapper.Content>

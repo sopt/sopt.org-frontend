@@ -16,7 +16,7 @@ export const StyleWrap = styled.div<StyleProps>`
         ? ({ theme }) => theme.colors.mainColor
         : ({ theme }) => theme.colors.soptWhite};
 
-    font-family: 'SUIT', arial;
+    font-family: 'SUIT', arial, sans-serif;
     font-size: 24px;
     font-weight: 900;
 

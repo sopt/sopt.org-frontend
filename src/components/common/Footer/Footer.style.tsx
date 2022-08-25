@@ -54,7 +54,7 @@ export const TitleButton = styled.button`
   line-height: 20px;
 
   color: ${({ theme }) => theme.colors.soptWhite};
-  font-family: 'SUIT', arial;
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
 `;
@@ -62,7 +62,7 @@ export const TitleButton = styled.button`
 export const CopyrightText = styled.p`
   margin-top: 25px;
   line-height: 180%;
-  font-family: 'SUIT', arial;
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
 
@@ -79,7 +79,7 @@ export const ChannelsWrap = styled.div`
 export const ChannelTitleText = styled.p`
   margin-bottom: 25px;
   line-height: 20px;
-  font-family: 'SUIT', arial;
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
 

@@ -85,7 +85,7 @@ export const DescriptionLabel = styled.p`
   line-height: 200%;
 
   white-space: pre-line;
-  font-family: 'SUIT', arial;
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
 

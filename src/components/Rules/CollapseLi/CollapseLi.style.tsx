@@ -24,7 +24,7 @@ export const TItle = styled.h3`
   text-align: center;
   line-height: 30px;
   color: ${theme.colors.soptWhite};
-  font-family: 'SUIT';
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 24px;
   font-weight: 700;
   font-style: normal;
@@ -59,7 +59,7 @@ export const Contents = styled.div<ButtonStyleProps>`
   letter-spacing: -0.03em;
   white-space: pre-line;
   color: ${theme.colors.soptWhite};
-  font-family: 'SUIT';
+  font-family: 'SUIT', arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
   font-style: normal;
@@ -76,8 +76,7 @@ export const Contents = styled.div<ButtonStyleProps>`
       : css`
           transition: max-height 0.15s ease-out;
           max-height: 0;
-        `}
-  @media screen and (max-width: 768px) {
+        `} @media screen and(max-width: 768 px) {
     font-size: 14px;
   }
 `;

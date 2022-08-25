@@ -1,4 +1,4 @@
-/* eslint-disable react/prefer-stateless-function */
+/* eslint-dDisable react/prefer-stateless-function */
 /* eslint-disable max-classes-per-file */
 /* eslint-disable import/no-duplicates */
 /* eslint-disable prettier/prettier */
@@ -137,6 +137,7 @@ declare module 'react-reveal/Bounce' {
   import { Component } from 'react';
 
   class Animation extends Component<RevealProps> {}
+
   export default Animation;
 }
 
@@ -144,6 +145,7 @@ declare module 'react-reveal/Fade' {
   import { Component } from 'react';
 
   class Animation extends Component<RevealProps> {}
+
   export default Animation;
 }
 
@@ -151,6 +153,7 @@ declare module 'react-reveal/Flip' {
   import { Component } from 'react';
 
   class Animation extends Component<RevealProps> {}
+
   export default Animation;
 }
 
@@ -158,6 +161,7 @@ declare module 'react-reveal/LightSpeed' {
   import { Component } from 'react';
 
   class Animation extends Component<RevealProps> {}
+
   export default Animation;
 }
 
@@ -165,6 +169,7 @@ declare module 'react-reveal/Roll' {
   import { Component } from 'react';
 
   class Animation extends Component<RevealProps> {}
+
   export default Animation;
 }
 
@@ -172,6 +177,7 @@ declare module 'react-reveal/Rotate' {
   import { Component } from 'react';
 
   class Animation extends Component<RevealProps> {}
+
   export default Animation;
 }
 
@@ -179,6 +185,7 @@ declare module 'react-reveal/Slide' {
   import { Component } from 'react';
 
   class Animation extends Component<RevealProps> {}
+
   export default Animation;
 }
 
@@ -186,6 +193,7 @@ declare module 'react-reveal/Zoom' {
   import { Component } from 'react';
 
   class Animation extends Component<RevealProps> {}
+
   export default Animation;
 }
 
@@ -193,6 +201,7 @@ declare module 'react-reveal/Jump' {
   import { Component } from 'react';
 
   class Animation extends Component<RevealProps> {}
+
   export default Animation;
 }
 
@@ -200,6 +209,7 @@ declare module 'react-reveal/Flash' {
   import { Component } from 'react';
 
   class Animation extends Component<RevealProps> {}
+
   export default Animation;
 }
 
@@ -207,6 +217,7 @@ declare module 'react-reveal/HeadShake' {
   import { Component } from 'react';
 
   class Animation extends Component<RevealProps> {}
+
   export default Animation;
 }
 
@@ -214,12 +225,14 @@ declare module 'react-reveal/Jello' {
   import { Component } from 'react';
 
   class Animation extends Component<RevealProps> {}
+
   export default Animation;
 }
 declare module 'react-reveal/Pulse' {
   import { Component } from 'react';
 
   class Animation extends Component<RevealProps> {}
+
   export default Animation;
 }
 
@@ -227,6 +240,7 @@ declare module 'react-reveal/RubberBand' {
   import { Component } from 'react';
 
   class Animation extends Component<RevealProps> {}
+
   export default Animation;
 }
 
@@ -234,6 +248,7 @@ declare module 'react-reveal/Shake' {
   import { Component } from 'react';
 
   class Animation extends Component<RevealProps> {}
+
   export default Animation;
 }
 
@@ -241,6 +256,7 @@ declare module 'react-reveal/Spin' {
   import { Component } from 'react';
 
   class Animation extends Component<RevealProps> {}
+
   export default Animation;
 }
 
@@ -248,6 +264,7 @@ declare module 'react-reveal/Swing' {
   import { Component } from 'react';
 
   class Animation extends Component<RevealProps> {}
+
   export default Animation;
 }
 
@@ -255,6 +272,7 @@ declare module 'react-reveal/Tada' {
   import { Component } from 'react';
 
   class Animation extends Component<RevealProps> {}
+
   export default Animation;
 }
 
@@ -262,5 +280,6 @@ declare module 'react-reveal/Wobble' {
   import { Component } from 'react';
 
   class Animation extends Component<RevealProps> {}
+
   export default Animation;
 }
