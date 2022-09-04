@@ -8,7 +8,6 @@ specifiers:
   '@emotion/babel-plugin': ^11.9.2
   '@emotion/react': ^11.9.0
   '@emotion/styled': ^11.8.1
-  '@next/swc-darwin-x64': ^11.1.2
   '@stylelint/postcss-css-in-js': ^0.38.0
   '@testing-library/dom': ^8.13.0
   '@testing-library/jest-dom': ^5.16.4
@@ -69,7 +68,6 @@ specifiers:
 dependencies:
   '@emotion/react': 11.10.0_rzzs4it3vc6zxnuyimlesjlbfm
   '@emotion/styled': 11.10.0_jq54skta57c72tr6wozaoukndu
-  '@next/swc-darwin-x64': 11.1.2
   axios: 0.27.2
   emotion-reset: 3.0.1_@emotion+react@11.10.0
   next: 12.1.6_oilcy444popke7cin4orzlm63e
@@ -1785,13 +1783,6 @@ packages:
     os: [darwin]
     requiresBuild: true
     optional: true
-
-  /@next/swc-darwin-x64/11.1.2:
-    resolution: {integrity: sha512-PGOp0E1GisU+EJJlsmJVGE+aPYD0Uh7zqgsrpD3F/Y3766Ptfbe1lEPPWnRDl+OzSSrSrX1lkyM/Jlmh5OwNvA==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [darwin]
-    dev: false
 
   /@next/swc-darwin-x64/12.1.6:
     resolution: {integrity: sha512-9FptMnbgHJK3dRDzfTpexs9S2hGpzOQxSQbe8omz6Pcl7rnEp9x4uSEKY51ho85JCjL4d0tDLBcXEJZKKLzxNg==}
