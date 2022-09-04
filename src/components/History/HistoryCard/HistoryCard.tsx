@@ -20,7 +20,6 @@ function HistoryCard({
   signature,
   mainColor,
   year,
-  semester,
   number,
 }: HistoryCardProps) {
   const router = useRouter();
@@ -30,7 +29,12 @@ function HistoryCard({
   };
 
   return (
-    <S.Li mainColor={mainColor} backgroundImage={backgroundImage} onClick={handleClick} id={number}>
+    <S.Li
+      mainColor={mainColor}
+      backgroundImage={backgroundImage}
+      onClick={handleClick}
+      id={number.toString()}
+    >
       <S.TitleContainer>
         <Image
           src={mainLogo ? mainLogo : SoptDefaultLogo.src}

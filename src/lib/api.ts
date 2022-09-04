@@ -19,7 +19,7 @@ export const getPartnersData = async () => {
   return data?.data;
 };
 
-export const getHistoryDetailData = async (id: number) => {
+export const getHistoryDetailData = async (id: string | string[] | undefined) => {
   const data = await client.get(`/history/semesters/${id}`);
 
   return data?.data;

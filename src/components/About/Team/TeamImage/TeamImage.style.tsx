@@ -10,7 +10,7 @@ export const Root = styled.section`
     justify-content: flex-start;
     width: 340px;
 
-    & div:first-child {
+    & div:first-of-type {
       width: 147px;
     }
 
@@ -34,7 +34,7 @@ export const ImageWrapper = styled.div`
     width: 188px;
 
     span {
-      &:first-child {
+      &:first-of-type {
         margin-right: 8px !important;
 
         /* 모바일 뷰 */
@@ -57,7 +57,7 @@ export const ImageWrapper = styled.div`
   .media__button {
     width: 215px;
     span {
-      &:first-child {
+      &:first-of-type {
         margin-right: 8px !important;
 
         /* 모바일 뷰 */

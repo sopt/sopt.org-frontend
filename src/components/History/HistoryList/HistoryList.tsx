@@ -64,7 +64,7 @@ function Resolved({ page, limit, setTotal }: HistoryListProps) {
 
   return (
     <S.UL>
-      {data?.data?.semesters?.map((item, idx) => (
+      {data?.data?.semesters?.map((item) => (
         <HistoryCard
           backgroundImage={item.background}
           mainColor={item.color}
