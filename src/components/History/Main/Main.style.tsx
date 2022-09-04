@@ -4,13 +4,14 @@ export const Root = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 100px;
   padding-top: 200px;
-  /* justify-content: center; */
   width: 100%;
-  height: 100vh;
-  /* margin-top: 200px; */
+  min-height: 100vh;
+
   /* 모바일 뷰 */
   @media (max-width: 1279px) {
+    margin-bottom: 92px;
     padding-top: 152px;
   }
 `;
