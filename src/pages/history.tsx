@@ -6,13 +6,17 @@ import theme from '@src/styles/theme';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 
-function history() {
+function History() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
   const handleClick = () => {
     router.push('/');
   };
+  const isDesktop = useMediaQuery({
+    query: '(min-width: 768px)',
+  });
 
   return (
     <>
@@ -20,8 +24,8 @@ function history() {
       <Styled.Root>
         <Image
           src={Sopt404.src}
-          width={296}
-          height={78}
+          width={isDesktop ? 296 : 196}
+          height={isDesktop ? 78 : 52}
           alt="솝트"
           blurDataURL={Sopt404.src}
           placeholder="blur"
@@ -35,7 +39,7 @@ function history() {
   );
 }
 
-export default history;
+export default History;
 
 const Styled = {
   Root: styled.section`
@@ -55,6 +59,9 @@ const Styled = {
       font-size: 45px;
       font-weight: 400;
       font-style: normal;
+      @media (max-width: 769px) {
+        font-size: 24px;
+      }
     }
   `,
 };
