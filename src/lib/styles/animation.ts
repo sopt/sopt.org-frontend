@@ -61,6 +61,7 @@ export const FadeOut = `
   }
   to {
       opacity: 0;
+      z-index: -1;
   }
 }
 @-moz-keyframes fadeout { /* Firefox */
@@ -69,6 +70,7 @@ export const FadeOut = `
   }
   to {
       opacity: 0;
+      z-index: -1;
   }
 }
 @-webkit-keyframes fadeout { /* Safari and Chrome */
@@ -77,6 +79,7 @@ export const FadeOut = `
   }
   to {
       opacity: 0;
+      z-index: -1;
   }
 }
 @-o-keyframes fadeout { /* Opera */
@@ -85,6 +88,7 @@ export const FadeOut = `
   }
   to {
       opacity: 0;
+      z-index: -1;
   }
 }
 `;
