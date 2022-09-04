@@ -18,3 +18,9 @@ export const getPartnersData = async () => {
 
   return data?.data;
 };
+
+export const getHistoryDetailData = async (id: number) => {
+  const data = await client.get(`/history/${id}`);
+
+  return data?.data;
+};
