@@ -52,13 +52,14 @@ export const Button = styled.button<ButtonStyleProps>`
   width: 24px;
   height: 13px;
   @media (max-width: 768px) {
+    margin-right: 15px;
     width: 16px;
     height: 13px;
-    margin-right: 15px;
   }
   ${ArrowDownAnimation}
   ${ArrowUpAnimation}
 
+  /* stylelint-disable */
   animation: ${({ isOpened }) => (isOpened ? 'ArrowUp 0.3s forwards' : 'ArrowDown 0.3s forwards')};
   color: inherit;
   font: inherit;
