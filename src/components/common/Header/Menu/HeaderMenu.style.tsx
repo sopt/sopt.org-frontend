@@ -1,11 +1,7 @@
-import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { FadeIn, FadeOut } from '@src/lib/styles/animation';
 import theme from '@src/styles/theme';
 
-import { MenuType } from '../Header';
-
-interface CloseButtonProps extends RootProps {
+interface CloseButtonProps {
   src: string;
 }
 
@@ -13,11 +9,7 @@ interface MenuTitleProps {
   isSelected: boolean;
 }
 
-interface RootProps {
-  isMenuShown: MenuType;
-}
-
-export const Root = styled.div<RootProps>`
+export const Root = styled.div`
   position: fixed;
   right: 0;
 
@@ -27,32 +19,6 @@ export const Root = styled.div<RootProps>`
   background: #232323;
 
   height: 100vh;
-
-  ${(props) => {
-    switch (props.isMenuShown) {
-      case 'true':
-        return css`
-          ${FadeIn}
-          animation: fadein 0.5s;
-          -moz-animation: fadein 0.5s; /* Firefox */
-          -webkit-animation: fadein 0.5s; /* Safari and Chrome */
-          -o-animation: fadein 0.5s; /* Opera */
-        `;
-      case 'false':
-        return css`
-          ${FadeOut}
-          animation: fadeout 0.5s;
-          -moz-animation: fadeout 0.5s; /* Firefox */
-          -webkit-animation: fadeout 0.5s; /* Safari and Chrome */
-          -o-animation: fadeout 0.5s; /* Opera */
-          animation-fill-mode: forwards;
-        `;
-      default:
-        return css`
-          display: none;
-        `;
-    }
-  }}
 
   /* 데스크탑 뷰 */
   @media (min-width: 1280px) {
@@ -91,32 +57,6 @@ export const CloseButton = styled.button<CloseButtonProps>`
 
   width: 24px;
   height: 24px;
-
-  ${(props) => {
-    switch (props.isMenuShown) {
-      case 'true':
-        return css`
-          ${FadeIn}
-          animation: fadein 0.5s;
-          -moz-animation: fadein 0.5s; /* Firefox */
-          -webkit-animation: fadein 0.5s; /* Safari and Chrome */
-          -o-animation: fadein 0.5s; /* Opera */
-        `;
-      case 'false':
-        return css`
-          ${FadeOut}
-          animation: fadeout 0.5s;
-          -moz-animation: fadeout 0.5s; /* Firefox */
-          -webkit-animation: fadeout 0.5s; /* Safari and Chrome */
-          -o-animation: fadeout 0.5s; /* Opera */
-          animation-fill-mode: forwards;
-        `;
-      default:
-        return css`
-          display: none;
-        `;
-    }
-  }}
 
   /* 모바일 뷰 */
   @media (max-width: 1279px) {
