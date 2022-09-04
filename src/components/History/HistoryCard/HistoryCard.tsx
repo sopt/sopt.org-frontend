@@ -10,8 +10,7 @@ export interface HistoryCardProps {
   mainLogo?: string;
   signature?: string;
   mainColor?: string;
-  year: number;
-  semester: number;
+  year: string;
   number: number;
 }
 
@@ -25,14 +24,6 @@ function HistoryCard({
   number,
 }: HistoryCardProps) {
   const router = useRouter();
-  const semesterParser = (semester: number) => {
-    switch (semester) {
-      case 1:
-        return '상반기';
-      default:
-        return '하반기';
-    }
-  };
 
   const handleClick = (e: React.MouseEvent<HTMLLIElement, MouseEvent>) => {
     router.push(`/history/${e.currentTarget.id}?current=0`);
@@ -51,9 +42,7 @@ function HistoryCard({
         />
       </S.TitleContainer>
       <S.Info>
-        <S.Semester>
-          {year}년 {semesterParser(semester)}
-        </S.Semester>
+        <S.Semester>{year}</S.Semester>
         <S.Title mainColor={mainColor}>
           <b>{number}</b>기 {signature && <b className="signatureColor">{signature}</b>} <b>SOPT</b>
         </S.Title>

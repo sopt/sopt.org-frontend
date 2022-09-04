@@ -20,7 +20,13 @@ export const getPartnersData = async () => {
 };
 
 export const getHistoryDetailData = async (id: number) => {
-  const data = await client.get(`/history/${id}`);
+  const data = await client.get(`/history/semesters/${id}`);
+
+  return data?.data;
+};
+
+export const getAllHistoryData = async (page: number, limit: number) => {
+  const data = await client.get(`/history/semesters?page=${page}&limit=${limit}`);
 
   return data?.data;
 };
