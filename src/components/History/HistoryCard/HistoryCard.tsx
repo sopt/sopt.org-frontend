@@ -35,7 +35,7 @@ function HistoryCard({
   };
 
   const handleClick = (e: React.MouseEvent<HTMLLIElement, MouseEvent>) => {
-    router.push(`/history/${e.currentTarget.id}`);
+    router.push(`/history/${e.currentTarget.id}?current=0`);
   };
 
   return (

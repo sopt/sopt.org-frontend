@@ -2,10 +2,13 @@ import CommonError from '@src/components/common/CommonError';
 import ErrorBoundary from '@src/components/common/ErrorBoundary';
 import SSRSafeSuspense from '@src/components/common/SSRSafeSuspense';
 import { getHistoryDetailData } from '@src/lib/api';
-import React, { useEffect } from 'react';
+import { seperateLeaderType } from '@src/utils/history';
+import { useRouter } from 'next/router';
+import React, { useEffect, useState } from 'react';
 import { useQuery } from 'react-query';
 import { ClipLoader } from 'react-spinners';
 
+import Sidebar from '../Sidebar/Sidebar';
 import * as S from './DetailMain.style';
 
 const DetailMain = () => {
@@ -22,16 +25,33 @@ const DetailMain = () => {
 };
 
 function Resolved() {
-  const id = 28;
+  const router = useRouter();
+
+  const id = router?.query?.id;
   const { data } = useQuery(['history', id], () => getHistoryDetailData(id), {
     suspense: true,
   });
+  const { secondSection, thirdSection } = seperateLeaderType(data?.data?.leaders);
+  const firstSection = {
+    id: 0,
+    part: `${id}기 THE SOPT`,
+  };
 
+  //  data?.data?.leaders
   useEffect(() => {
     console.log('>>data', data);
+    console.log('>>router', router);
   }, [data]);
 
-  return <S.Root>DetailMain</S.Root>;
+  return (
+    <S.Root>
+      <Sidebar
+        firstSection={firstSection}
+        secondSection={secondSection}
+        thirdSection={thirdSection}
+      />{' '}
+    </S.Root>
+  );
 }
 
 export default DetailMain;
