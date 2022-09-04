@@ -18,7 +18,7 @@ function HeaderMenu({ handleCloseClick }: HeaderMenuProps) {
     const currentMenu = e.currentTarget.id;
 
     if (currentMenu === '/recruit') {
-      window.open('https://sopt-recruiting.web.app/recruiting/apply/ob');
+      window.open('https://sopt-recruiting.web.app/recruiting/apply/yb');
 
       return;
     }

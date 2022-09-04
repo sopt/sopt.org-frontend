@@ -8,10 +8,10 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 
-function Wrong() {
+function History() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
-
-  const handleButtonClick = () => {
+  const handleClick = () => {
     router.push('/');
   };
   const isDesktop = useMediaQuery({
@@ -30,16 +30,16 @@ function Wrong() {
           blurDataURL={Sopt404.src}
           placeholder="blur"
         />
-        <span>잘못된 경로예요!</span>
-        <RoundButton onClick={handleButtonClick} isReverse={true}>
-          홈으로 가기
-        </RoundButton>
+        <span>앗 아직 준비 중인 기능이에요!</span>
+        {/* <RoundButton onClick={handleClick} isReverse={true}>
+        홈으로 가기
+      </RoundButton> */}
       </Styled.Root>
     </>
   );
 }
 
-export default Wrong;
+export default History;
 
 const Styled = {
   Root: styled.section`
