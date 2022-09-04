@@ -33,18 +33,18 @@ export const Root = styled.div<RootProps>`
       case 'true':
         return css`
           ${FadeIn}
-          animation: fadein 0.5s;
-          -moz-animation: fadein 0.5s; /* Firefox */
-          -webkit-animation: fadein 0.5s; /* Safari and Chrome */
-          -o-animation: fadein 0.5s; /* Opera */
+          animation: fadein 0.2s;
+          -moz-animation: fadein 0.2s; /* Firefox */
+          -webkit-animation: fadein 0.2s; /* Safari and Chrome */
+          -o-animation: fadein 0.2s; /* Opera */
         `;
       case 'false':
         return css`
           ${FadeOut}
-          animation: fadeout 0.5s;
-          -moz-animation: fadeout 0.5s; /* Firefox */
-          -webkit-animation: fadeout 0.5s; /* Safari and Chrome */
-          -o-animation: fadeout 0.5s; /* Opera */
+          animation: fadeout 0.2s;
+          -moz-animation: fadeout 0.2s; /* Firefox */
+          -webkit-animation: fadeout 0.2s; /* Safari and Chrome */
+          -o-animation: fadeout 0.2s; /* Opera */
           animation-fill-mode: forwards;
         `;
       default:
@@ -97,18 +97,18 @@ export const CloseButton = styled.button<CloseButtonProps>`
       case 'true':
         return css`
           ${FadeIn}
-          animation: fadein 0.5s;
-          -moz-animation: fadein 0.5s; /* Firefox */
-          -webkit-animation: fadein 0.5s; /* Safari and Chrome */
-          -o-animation: fadein 0.5s; /* Opera */
+          animation: fadein 0.2s;
+          -moz-animation: fadein 0.2s; /* Firefox */
+          -webkit-animation: fadein 0.2s; /* Safari and Chrome */
+          -o-animation: fadein 0.2s; /* Opera */
         `;
       case 'false':
         return css`
           ${FadeOut}
-          animation: fadeout 0.5s;
-          -moz-animation: fadeout 0.5s; /* Firefox */
-          -webkit-animation: fadeout 0.5s; /* Safari and Chrome */
-          -o-animation: fadeout 0.5s; /* Opera */
+          animation: fadeout 0.2s;
+          -moz-animation: fadeout 0.2s; /* Firefox */
+          -webkit-animation: fadeout 0.2s; /* Safari and Chrome */
+          -o-animation: fadeout 0.2s; /* Opera */
           animation-fill-mode: forwards;
         `;
       default:
