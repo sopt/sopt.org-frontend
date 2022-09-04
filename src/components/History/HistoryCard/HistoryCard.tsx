@@ -32,7 +32,7 @@ function HistoryCard({
     <S.Li
       mainColor={mainColor}
       backgroundImage={backgroundImage}
-      onClick={handleClick}
+      // onClick={handleClick}
       id={number.toString()}
     >
       <S.TitleContainer>
