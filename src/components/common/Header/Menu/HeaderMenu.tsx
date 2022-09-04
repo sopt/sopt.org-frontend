@@ -2,15 +2,17 @@ import xButton from '@src/assets/icons/xButton.png';
 import Channels from '@src/components/common/Footer/Channels';
 import useNoScroll from '@src/hooks/useNoScroll';
 import { useRouter } from 'next/router';
-import React from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 
+import { MenuType } from '../Header';
 import * as S from './HeaderMenu.style';
 
 interface HeaderMenuProps {
-  handleCloseClick: any;
+  setIsMenuShown: Dispatch<SetStateAction<MenuType>>;
+  isMenuShown: MenuType;
 }
 
-function HeaderMenu({ handleCloseClick }: HeaderMenuProps) {
+function HeaderMenu({ setIsMenuShown, isMenuShown }: HeaderMenuProps) {
   useNoScroll();
   const router = useRouter();
 
@@ -26,9 +28,13 @@ function HeaderMenu({ handleCloseClick }: HeaderMenuProps) {
   };
 
   return (
-    <S.Root>
+    <S.Root isMenuShown={isMenuShown}>
       <S.MenuWrap>
-        <S.CloseButton src={xButton.src} onClick={handleCloseClick} />
+        <S.CloseButton
+          src={xButton.src}
+          onClick={() => setIsMenuShown('false')}
+          isMenuShown={isMenuShown}
+        />
         <S.ContentsWrap>
           <S.MenuTitlesWrap>
             <S.MenuTitle id="/" isSelected={router.pathname === '/'} onClick={handleClick}>
