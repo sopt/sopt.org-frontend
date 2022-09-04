@@ -1,4 +1,4 @@
-import SoptDefaultLogo from '@src/assets/images/sopt_default_logo.png';
+import SoptDefaultLogo from '@src/assets/images/sopt_default_logo.svg';
 import Image from 'next/image';
 import React from 'react';
 

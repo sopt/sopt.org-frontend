@@ -10,7 +10,7 @@ export const Root = styled.main`
   min-height: 100vh;
 
   /* 모바일 뷰 */
-  @media (max-width: 1279px) {
+  @media (max-width: 784px) {
     margin-bottom: 92px;
     padding-top: 152px;
   }

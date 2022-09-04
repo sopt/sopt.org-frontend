@@ -4,7 +4,7 @@ export const Container = styled.nav`
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 58rem;
+  width: 100%;
 `;
 
 export const PageList = styled.ol`
@@ -24,12 +24,24 @@ export const Page = styled.li<{ isCurrent: boolean }>`
   line-height: 40px;
   position: relative;
   bottom: 8px;
+  @media (max-width: 784px) {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    position: static;
+  }
   `
       : `
   color: ${props.theme.colors.soptWhite};
   font-weight: 600;
   font-size: 20px;
   line-height: 25px;
+  @media (max-width: 784px) {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    position: static;
+  }
   `};
 
   &:hover {
