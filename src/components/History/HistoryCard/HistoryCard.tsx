@@ -1,5 +1,6 @@
 import SoptDefaultLogo from '@src/assets/images/sopt_default_logo.svg';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import React from 'react';
 
 import * as S from './HistoryCard.style';
@@ -23,6 +24,7 @@ function HistoryCard({
   semester,
   number,
 }: HistoryCardProps) {
+  const router = useRouter();
   const semesterParser = (semester: number) => {
     switch (semester) {
       case 1:
@@ -32,8 +34,12 @@ function HistoryCard({
     }
   };
 
+  const handleClick = (e: React.MouseEvent<HTMLLIElement, MouseEvent>) => {
+    router.push(`/history/${e.currentTarget.id}`);
+  };
+
   return (
-    <S.Li mainColor={mainColor} backgroundImage={backgroundImage}>
+    <S.Li mainColor={mainColor} backgroundImage={backgroundImage} onClick={handleClick} id={number}>
       <S.TitleContainer>
         <Image
           src={mainLogo ? mainLogo : SoptDefaultLogo.src}

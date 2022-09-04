@@ -13,6 +13,7 @@ export const Li = styled.li<cardProps>`
   border-radius: 16px 16px 0px 0px;
   background: #242424;
   background: url(${(props) => props.backgroundImage});
+  cursor: pointer;
   padding: 16px 20px 1px 12px;
   width: 365px;
   max-width: 392px;
