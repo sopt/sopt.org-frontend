@@ -9,7 +9,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React from 'react';
 
-function history() {
+function HistoryPage() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
 
@@ -22,4 +22,4 @@ function history() {
   );
 }
 
-export default history;
+export default HistoryPage;
