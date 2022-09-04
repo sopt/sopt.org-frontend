@@ -48,13 +48,19 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="SOPT는 IT와 벤처창업에 뜻이 있는 대학생들이 모인 국내 최대 규모의 대학생 연합 IT벤처창업 동아리입니다."
         />
 
-        <meta property="og:image" content="/sopt_discord_seo.jpg" />
+        <meta
+          property="og:image"
+          content="https://sopt-makers.s3.ap-northeast-2.amazonaws.com/mainpage/seo/sopt_discord_seo.png"
+        />
         <meta property="og:url" content="https://sopt.org/" />
 
         <meta property="twitter:card" content="website" />
         <meta property="twitter:site" content="https://sopt.org/" />
 
-        <meta name="twitter:image" content="/sopt_twitter_seo.jpg" />
+        <meta
+          name="twitter:image"
+          content="https://sopt-makers.s3.ap-northeast-2.amazonaws.com/mainpage/seo/sopt_twitter_seo.png"
+        />
       </Head>
       <Global styles={global} />
       <ThemeProvider theme={theme}>
