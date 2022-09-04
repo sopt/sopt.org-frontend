@@ -12,3 +12,5 @@ interface IParentComponentProps {
   className?: string;
   children: ReactChild;
 }
+
+declare module 'shortid';

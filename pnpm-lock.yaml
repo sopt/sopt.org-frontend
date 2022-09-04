@@ -55,6 +55,7 @@ specifiers:
   react-spinners: ^0.13.4
   react-test-renderer: ^18.2.0
   react-toastify: ^9.0.8
+  shortid: ^2.2.16
   stylelint: ^14.8.5
   stylelint-config-concentric-order: ^5.0.0
   stylelint-config-prettier: ^9.0.3
@@ -82,6 +83,7 @@ dependencies:
   react-spinners: 0.13.4_ef5jwxihqo6n7gxfmzogljlgcm
   react-test-renderer: 18.2.0_react@18.1.0
   react-toastify: 9.0.8_ef5jwxihqo6n7gxfmzogljlgcm
+  shortid: 2.2.16
 
 devDependencies:
   '@babel/core': 7.18.10
@@ -5472,6 +5474,10 @@ packages:
       big-integer: 1.6.51
     dev: false
 
+  /nanoid/2.1.11:
+    resolution: {integrity: sha512-s/snB+WGm6uwi0WjsZdaVcuf3KJXlfGl2LcxgwkEwJF0D/BWzVWAZW/XY4bFaiR7s0Jk3FPvlnepg1H1b1UwlA==}
+    dev: false
+
   /nanoid/3.3.4:
     resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -6402,6 +6408,12 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
     dev: true
+
+  /shortid/2.2.16:
+    resolution: {integrity: sha512-Ugt+GIZqvGXCIItnsL+lvFJOiN7RYqlGy7QE41O3YC1xbNSeDGIRO7xg2JJXIAj1cAGnOeC1r7/T9pgrtQbv4g==}
+    dependencies:
+      nanoid: 2.1.11
+    dev: false
 
   /side-channel/1.0.4:
     resolution: {integrity: sha512-q5XPytqFEIKHkGdiMIrY10mvLRvnQh42/+GoBlFW3b2LXLE2xxJpZFdm94we0BaoV3RwJyGqg5wS7epxTv0Zvw==}
